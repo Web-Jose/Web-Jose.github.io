@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <a href="Page1.html" class="name">Jose Cortes</a>
+      <nav>
+        <a href="Page1.html">Home</a>
+        <a href="aboutme.html">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="square">
+        <img src="Me.jpg" alt="picture of me">
+        <div class="info">
+          <h1 class="name">Jose Cortes</h1>
+          <p class="position">Computer Science Undergraduate</p>
+          <p class="university">California State University of Fresno</p>
+          <a href="aboutme.html" class="button">Learn More</a>
+        </div>
+      </div>
+      <div class="square-2">
+        <div class="picture-container">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain.svg" alt="circle picture of code">
+            <h1 class="name">Recent Projects</h1>
+            <p class="project-info">This is where information about the project would go. It could include technologies used, a brief overview of the project, and a link to view or learn more about the project.</p>
+        </div>
+    </div>
+    <div class="square-3">
+      <h1 class="name">Languages Known</h1>
+      <div class="language-container">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="language1">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="language2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="language3">
+      </div>
+      <div class="language-container">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="language4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="language5">
+      </div>
+  </div>
+    </main>
+  </body>
+</html>
