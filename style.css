@@ -207,27 +207,6 @@ main{
     border-radius: 0.625em;
     padding: 0.625em0.3125em 0.625em;
 }
-@media(max-width: 37.4375em){
-    .square, .square-2 {
-        width: 100%;
-        margin: 0.625em 0;
-        float: none;
-    }
-}
-@media (max-width: 37.5em) {
-    .square, .square-2, .square-3 {
-        top: calc(50vmin / 2);
-    }
-}
-@media (max-width: 37.5em) {
-    .picture-container {
-        margin-top: 252x;
-    }
-    .square {
-        width: 100%;
-        margin: 0.625em 0;
-    }
-}
 
 /*
 Header
