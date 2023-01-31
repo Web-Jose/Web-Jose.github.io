@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html>
+  <!-- This is the title of the project and the css file link -->
   <head>
     <title>My Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
   <body>
+    <!-- Header with Tabs
+      Add links to the added pages
+    -->
     <header>
       <a href="index.html" class="name">Jose Cortes</a>
       <nav>
         <a href="index.html">Home</a>
         <a href="aboutme.html">About</a>
-        <a href="#projects">Projects</a>
+        <a href="projects.html">Projects</a>
         <a href="#experiences">Experiences</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
+
     <main>
+
+      <!-- First square -->
       <div class="square">
-        <img src="Me.jpg" alt="picture of me">
-        <div class="info">
-          <h1 class="name">Jose Cortes</h1>
-          <p class="position">Computer Science Undergraduate</p>
-          <p class="university">California State University of Fresno</p>
-          <a href="aboutme.html" class="button">Learn More</a>
+        <img src="Me2.jpg" alt="picture of me">
+        <h1 class="name">Jose Cortes</h1>
+        <p class="sub-text">Computer Science Undergraduate</p>
+        <p class="sub-text">California State University of Fresno</p>
+        <div class="LMButton">
+          <a href="aboutme.html" class="button">Discover More</a>
         </div>
       </div>
+
+      <!-- Second square -->
       <div class="square-2">
-        <div class="picture-container">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain.svg" alt="circle picture of code">
-            <h1 class="name">Recent Projects</h1>
-            <p class="project-info">This is where information about the project would go. It could include technologies used, a brief overview of the project, and a link to view or learn more about the project.</p>
+          <img src="Square2Pic.jpg" alt="Generic picture of code">
+          <h1 class="name">Recent Projects</h1>
+          <p class="sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non lobortis justo. Curabitur in tristique mauris, vitae cursus ante. Sed leo elit, placerat ac est vitae, fringilla ultrices sapien. Nam ultricies ipsum et maximus blandit. Sed a purus dignissim, feugiat lacus at, dapibus sapien. Vestibulum iaculis tellus eget auctor tincidunt. Donec nec leo magna. Praesent est risus, lacinia in arcu vel, efficitur dapibus turpis.</p>
+          <div class="LMButton">
+            <a href="projects.html" class="button">Read More</a>
+          </div>
+      </div>
+
+      <!-- Third Square -->
+      <div class="square-3">
+        <div class="CodePic">
+          <img src="Coding.jpg" alt="Generic Coding pic">
         </div>
-    </div>
-    <div class="square-3">
-      <h1 class="name">Languages Known</h1>
-      <div class="language-container">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="language1">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="language2">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="language3">
+        <h1 class="name">Languages Known</h1>
+        <div class="language-container">
+          <img src="cplusplus.svg" alt="language1">
+          <img src="html5.svg" alt="language2">
+          <img src="css3.svg"language3">
+        </div>
       </div>
-      <div class="language-container">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="language4">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="language5">
-      </div>
-  </div>
+    
     </main>
   </body>
 </html>
