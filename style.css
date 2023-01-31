@@ -1,157 +1,155 @@
 /* Set font for the name */
 .name {
     font-family: 'Abril Fatface';
-  }
-  /* Set font for the tabs */
-  nav a {
+    color: #E0E0E0;
+    margin-right: auto;
+    white-space: nowrap;
+    font-size: 2.5em;
+}
+/* Set font for the tabs */
+nav a {
     font-family: 'Lato';
-  }
-  /* Set color scheme */
-  body {
-    background-color: #e7ecef;
-    margin: 0;
-    padding: 0;
-  }
-  /* Fixed header */
-  header {
+}
+/*Header*/
+header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    border: solid 2px #274c77;
-    padding: 5px;
-    background-color: #274c77;
-  }
-  .name {
-    color: #e7ecef;
-    margin-right: auto;
-    white-space: nowrap;
-  }
-  header .name {
+    background-color: #1b1b1b;
+    padding: .5em;
+    height: auto;
+}
+header .name {
+    position: absolute;
+    top: 50%;
+    left: 3em;
+    transform: translate(-50%,-50%);
     text-decoration: none;
 }
 header .name:hover {
-    color: #8b8c89; /* same color as the tabs on hover */
-    text-decoration: none; /* remove underline */
+    color: #ffc107;
 }
-  nav {
+/* Tabs */
+nav {
     width: 100%;
     display: flex;
     justify-content: center;
-  }
-  nav a {
-    color: #e7ecef;
-    margin: 0 5px;
+    font-size: 2.5em;
+}
+nav a {
+    color: #E0E0E0;
+    margin: 0 0.3125em;
     text-decoration: none;
-  }
-  nav a:hover {
-    color: #8b8c89;
-  }
-  nav a:active {
-    color: #e7ecef;
-  }
-  /* Add styles for the square container */
-  .square {
+}
+nav a:hover {
+    color: #ffc107;
+}
+nav a:active {
+    color: #E0E0E0;
+}
+/* Body */
+body {
+    background-color: #E0E0E0;
+    margin: 0;
+    padding: 0;
+}
+.square, .square-2, .square-3 {
     position: relative;
-    width: 250px;
-    height: 350px;
-    background-color: #6096ba;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    float: left;
-  }
-  .square-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    width: 250px;
-    height: 350px;
-    background-color: #6096ba;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    float: left;
-    overflow: hidden;
+    top: 13em;
+    width:25em;
+    height:25em;
+    background-color: #1b1b1b;
+    border-radius: 0.625em;
+    padding: 1.25em;
+    margin: 1.25em;
+    margin-bottom: 8em;
 }
-@media(max-width:599px){
-    .square, .square-2 {
-        width: 100%;
-        margin: 10px 0;
-        float: none;
-    }
-}
-.picture-container {
-    width: 100%;
-    height: 80%;
-}
-.picture-container-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-h1.name-2 {
-    /* styles for the name element in the second square */
-    font-size: 20px; /* reduce the font size of the name */
-    margin: 0; /* remove the margin around the name */
-}
+/* Square 1 */
 img {
-    border-radius: 50%; /* make the image a circle */
-    width: 150px; /* set the width of the image */
-    height: 150px; /* set the height of the image */
     object-fit: cover; /* make the image cover the entire container */
 }
-h1.name {
-    font-size: 25px; /* set font size for name */
-    margin-bottom: 10px; /* add margin to bottom of name */
+.square img{
+    width: 23em; /* set the width of the image */
+    height: 23em; /* set the height of the image */
+    position: absolute;
+    top: 5em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; /* make the image a circle */
 }
-p.position, p.university {
-    font-size: 14px; /* set font size for position and university */
-    margin-bottom: 10px; /* add margin to bottom of position and university */
+.square .name{
+    text-align: center;
+    line-height: .5em;
+    padding-top: 57%;
 }
-p.position-2, p.university-2 {
-    /* styles for the position and university elements in the second square */
-    font-size: 12px; /* reduce the font size of the position and university */
-    margin: 0; /* remove the margin around the position and university */
+.square .sub-text{
+    text-align: center;
+    font-size: 1em;
+    font-family: Lato;
+    line-height: .5em;
+    color: #E0E0E0;
+}
+.LMButton{
+    text-align: center;
+    margin-top: 1.5em;
+}
+.button{
+    font-family: Lato;
 }
 a.button {
-    padding: 10px 20px; /* add padding to button */
-    background-color: #274c77; /* set background color for button */
-    color: #e7ecef; /* set text color for button */
-    border-radius: 10px; /* add border radius to button */
+    font-size: 2em;
+    padding: 0.25em; /* add padding to button */
+    background-color: #4caf50; /* set background color for button */
+    color: #e0e0e0; /* set text color for button */
+    border-radius: 0.625em; /* add border radius to button */
     text-decoration: none; /* remove underline from button */
 }
 .button:hover {
-    background-color: #8b8c89; /* Change the background color on hover */
-    color: #e7ecef; /* Change the text color on hover */
+    background-color: #ffc107; /* Change the background color on hover */
+    color: #1b1b1b; /* Change the text color on hover */
     cursor: pointer; /* Show the cursor as a pointer on hover */
 }
+/* Square 2 */
+.square-2 img{
+    width: 15em;
+    height: 15em;
+    position: absolute;
+    top: 0em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; /* make the image a circle */
+}
+.square-2 .name{
+    text-align: center;
+    line-height: .5em;
+    padding-top: 22%;
+}
+.square-2 .sub-text{
+    text-align: center;
+    font-size: 1em;
+    font-family: Lato;
+    color: #E0E0E0;
+}
+/* Square 3 */
 .square-3 {
-    /* similar styles as square-2 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    width: 250px;
-    height: 350px;
-    background-color: #6096ba;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    float: left;
     flex-direction: column;
+}
+.CodePic img{
+    width: 15em;
+    height: 15em;
+    position: absolute;
+    top: 0em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; /* make the image a circle */
 }
 .square-3 h1.name{
     /* styles for the title */
-    margin: 0;
-    padding: 0;
+    padding-top: 17%;
     text-align: center;
-    font-size: 2em;
 }
 .language-container {
     /* styles for the container that holds the images */
@@ -165,7 +163,6 @@ a.button {
     /* styles for the images */
     width: 30%;
     height: auto;
-    margin: 10px;
 }
 main{
     display: flex;
@@ -173,21 +170,74 @@ main{
     justify-content: center;
     align-items: center;
 }
-.square, .square-2, .square-3 {
-    position: relative;
-    top: 200px;
+/* Add styles for the project container */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3.125em 0;
 }
-@media (max-width: 600px) {
-    .square, .square-2, .square-3 {
-        top: 100px;
+.project {
+    width: 18.75em;
+    margin: 1.25em;
+    background-color: #586f8c;
+    border-radius: 0.625em;
+    padding: 1.25em;
+    text-align: center;
+}
+.project h2 {
+    margin-top: 0;
+    color: #f2f2f2;
+}
+.project p {
+    color: #f2f2f2;
+}
+.project a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin-top: 0.625em;
+    display: block;
+    background-color: #262625;
+    border-radius: 0.625em;
+    padding: 0.625em0.3125em 0.625em;
+}
+.project a:hover {
+    color: #f2f2f2;
+    background-color: #a6a6a6;
+    border-radius: 0.625em;
+    padding: 0.625em0.3125em 0.625em;
+}
+@media(max-width: 37.4375em){
+    .square, .square-2 {
+        width: 100%;
+        margin: 0.625em 0;
+        float: none;
     }
 }
-@media (max-width: 599px) {
+@media (max-width: 37.5em) {
+    .square, .square-2, .square-3 {
+        top: calc(50vmin / 2);
+    }
+}
+@media (max-width: 37.5em) {
     .picture-container {
         margin-top: 252x;
     }
     .square {
         width: 100%;
-        margin: 10px 0;
-        }
+        margin: 0.625em 0;
+    }
 }
+
+/*
+Header
+    Desktop
+    //Header
+        Jose Cortes (Home button), Home (Home button), About (About me button), Projects (Page with list of projects) Experiences (volunteer), and Contact
+    //Body - 3 columns
+        pic, name, compsci, csuf, learn more
+        pic, recent projects, learn more
+        pic, languages known, icons 3x2 (language projects)
+    // Footer
+        Social media
+*/
