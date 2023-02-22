@@ -1,0 +1,292 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.Title {
+  font: 2em "Lora";
+  color: #efedd5;
+}
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2.5em;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #266752;
+  padding: 0.25em;
+  border-bottom: 0.2em solid #efedd5;
+}
+header .Title {
+  text-decoration: none;
+  margin-right: auto;
+  padding-left: 0.5em;
+}
+header .Title:hover {
+  color: #dea450;
+}
+/* Tabs */
+header nav {
+  display: flex;
+  gap: 1em;
+  padding-right: 1em;
+}
+nav a {
+  color: #efedd5;
+  font-size: 1em;
+  text-decoration: none;
+  font-family: Lato;
+}
+nav a:hover {
+  color: #dea450;
+}
+nav a:active {
+  color: #efedd5;
+}
+/* Body */
+body {
+  background-color: #efedd5;
+  display: flex;
+  align-items: center;
+  padding-top: 15em;
+  margin: 0;
+}
+/* Home Section */
+.HomeSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-bottom: 9%;
+}
+#sqrMe {
+  order: 2;
+}
+#sqrPro {
+  order: 1;
+}
+#sqrSki {
+  order: 3;
+}
+.square {
+  width: 25%;
+  background-color: #266752;
+  border-radius: 0.625em;
+  padding: 1.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.LargeIMG {
+  width: 100%;
+  margin-top: -5em;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.MediumIMG {
+  width: 50%;
+  height: 50%;
+  margin-top: -6em;
+}
+.MediumIMG img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.square .Title {
+  line-height: 0;
+}
+.sub-text {
+  color: #efedd5;
+  font: 1em Lato;
+  text-align: center;
+}
+.LMButton {
+  text-align: center;
+  margin-top: 1.5em;
+}
+.button {
+  font-family: Lato;
+}
+a.button {
+  font-size: 2em;
+  padding: 0.25em;
+  background-color: #dea450;
+  color: #efedd5;
+  border-radius: 1em;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #0a1823;
+  color: #dea450;
+  cursor: pointer;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.skill-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.skill-container img {
+  width: 25%;
+}
+
+.scroll-to-button {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.scroll-to-button img {
+  width: 3%;
+}
+
+.AboutSection {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 4em;
+}
+.PicABO {
+  width: 50%;
+}
+.PicSQR {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.PicSQR img {
+  width: 42%;
+  border-radius: 50%;
+}
+.AboutSection .Title {
+  color: #efedd5;
+  text-align: center;
+  width: 100%;
+  line-height: 0;
+}
+.SumSquare {
+  width: 100%;
+  background-color: #266752;
+  border-radius: 0.625em;
+  padding: 1.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.EduSQR {
+  width: 40%;
+  background-color: #266752;
+  border-radius: 0.625em;
+  padding: 1.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Projects Section */
+.ProjectsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5em 0;
+}
+#green {
+  color: #266752;
+}
+
+.carousel-container {
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.carousel {
+  display: inline-block;
+  width: calc(100% - 20px);
+  margin: 10px;
+  perspective: 1000px;
+  gap: 1em;
+}
+
+.card {
+  display: inline-block;
+  width: calc(100% / 3 - 20px);
+  margin: 10px;
+  text-align: center;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #266752;
+  border-radius: 0.625em;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.front img {
+  width: 50%;
+  border-radius: 0.625em;
+}
+
+.back .Title {
+  color: #efedd5;
+  font-size: 2em;
+  font-family: Lora;
+  text-align: right;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+/* Footer 
+footer {
+  background-color: #1b1b1b;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 2.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25em;
+  bottom: 0;
+}
+.copyright {
+  color: #e0e0e0;
+  font: 1em Lora;
+}
+footer a {
+  display: inline-flex;
+  width: 2em;
+  height: 2em;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+*/
