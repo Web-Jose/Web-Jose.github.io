@@ -54,8 +54,8 @@ fetch("projects.json")
 gapi.load("client:auth2", () => {
   gapi.client
     .init({
-      apiKey: "YOUR_API_KEY",
-      clientId: "YOUR_CLIENT_ID",
+      apiKey: "AIzaSyDnoUCKIwbCGbpRxsif9Kg2K1BAPgn5ftQ",
+      clientId: "482444636308-6eldsgflgsvld04v8gb84m7g6tam4vdm.apps.googleusercontent.com",
       discoveryDocs: [
         "https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest",
       ],
