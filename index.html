@@ -16,7 +16,7 @@
       <a href="index.html">Home</a>
       <a href="#aboutmeSec">About</a>
       <a href="#projects">Projects</a>
-      <a href="#experiences">Experiences</a>
+      <!--<a href="#experiences">Experiences</a>--->
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -195,27 +195,65 @@
         <h1 class="Title" id="green">Projects</h1>
         <div class="CardContainer" id="card-container"></div>
       </div>
-      <!-- Experiences -->
+      <!-- Experiences 
       <div class="ExperienceSection">
         <h1 class="Title" id="green">Experiences</h1>
-        <div class="CardContainer" id="">h</div>
+        <div class="CardContainer" id=""></div>
       </div>
-      <!-- Not sure what to put -->
-      <div class="contactform">
-        <h1 class="Title">Contact Me</h1>
-        <form action="contact.php" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
+      Not sure what to put -->
+      <footer>
+        <div id="contact" class="contactform">
+          <h1 class="Title">Get In Touch</h1>
+          <form action="contact.php" method="post">
+            <label for="name">Name:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name..."
+              required
+            />
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email..."
+              required
+            />
+            <label for="subject">Subject:</label><br />
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject..."
+            />
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Type your message here..."
+              required
+            ></textarea>
+            <input id="submit" type="submit" value="Submit" />
+          </form>
+        </div>
+        <a href="mailto:josehcortes02@gmail.com" class="email">
+          <img class="e-icon" src="Email.svg" />
+          JoseHCortes02@gmail.com
+        </a>
+        <div class="socials">
+          Connect with me:
+          <div class="social-icons">
+            <img class="icon" src="icons8-github.svg" alt="GitHub icon" />
+            <img class="icon" src="icons8-linkedin.svg" alt="LinkedIn icon" />
+            <img class="icon" src="icons8-instagram.svg" alt="Instagram icon" />
+            <img class="icon" src="icons8-twitter.svg" alt="Twitter icon" />
+            <img class="icon" src="icons8-pinterest.svg" alt="Pinterest icon" />
+          </div>
+          <div class="copyright">Copyright &copy Jose Cortes, 2023</div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
