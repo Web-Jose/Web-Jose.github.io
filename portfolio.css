@@ -2,10 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.front,
 .Title {
   font: 2em "Lora";
   color: #efedd5;
+  line-height: 0.25;
 }
 /* Header */
 header {
@@ -42,11 +42,9 @@ nav a {
   text-decoration: none;
   font-family: Lato;
 }
-nav a:hover {
-  color: #dea450;
-}
+nav a:hover,
 nav a:active {
-  color: #efedd5;
+  color: #dea450;
 }
 /* Body */
 body {
@@ -99,10 +97,6 @@ body {
   object-fit: cover;
   border-radius: 50%;
 }
-.square .Title {
-  line-height: 0;
-}
-.expandable,
 .sub-text {
   color: #efedd5;
   font: 1em Lato;
@@ -124,7 +118,8 @@ a.button {
   border-radius: 1em;
   text-decoration: none;
 }
-.button:hover {
+.button:hover,
+.button:active {
   background-color: #0a1823;
   color: #dea450;
   cursor: pointer;
@@ -215,7 +210,7 @@ div[id] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5em 0;
+  padding-bottom: 2em;
 }
 #green {
   color: #266752;
@@ -227,28 +222,39 @@ div[id] {
   gap: 1em;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 .card {
-  width: 30%;
+  width: 45%;
   background-color: #266752;
 }
 .front {
   width: 100%;
-  height: 5em;
+  font: 2em "Lora";
+  color: #efedd5;
+  height: 7em;
+  background-color: rgba(0, 166, 127, 0.2);
+  background-blend-mode: screen;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   display: flex;
+  justify-content: center;
   align-items: center;
+  text-shadow: #0a1823 1px 0 0.625em;
 }
 .expandable {
   position: absolute;
-  width: 30%;
+  width: inherit;
   background-color: #266752;
   display: none;
+  color: #efedd5;
+  font: 1em Lato;
+  text-align: center;
 }
 .card:hover .expandable {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .buttons {
@@ -261,11 +267,83 @@ div[id] {
   color: #efedd5;
   background-color: #dea450;
   border-radius: 50%;
-  padding: 0.5em;
+  padding: 0.25em;
+  white-space: nowrap;
+  text-align: center;
 }
 .buttons a:hover {
   color: #dea450;
   background-color: #0a1823;
+}
+footer {
+  background-color: #266752;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contactform {
+  width: 70%;
+}
+form {
+  text-align: left;
+}
+label {
+  font: 1em "Lato";
+  color: #efedd5;
+}
+footer input {
+  padding: 0.625em;
+  border-radius: 0.625em;
+  font-family: "Lato";
+  width: 100%;
+  margin: 0.625em 0;
+}
+footer textarea {
+  padding: 0.625em;
+  border-radius: 0.625em;
+  font-family: "Lato";
+  width: 100%;
+  margin: 0.625em 0 0 0;
+  resize: vertical;
+}
+#submit {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0.625em;
+  border: none;
+  font: 1em "Lato";
+  background-color: #dea450;
+  color: #efedd5;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+#submit:active {
+  background-color: #0a1823;
+  color: #dea450;
+}
+.e-icon {
+  width: 25px;
+}
+.email {
+  font: 1em "Lato";
+  color: #efedd5;
+  margin-top: 0.5em;
+  text-decoration: none;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+.socials {
+  font: 1em "Lato";
+  color: #efedd5;
+  margin: 1em 0;
+}
+.icon {
+  width: 40px;
+  fill: orange;
 }
 
 /* Extra Small Devices (Mobile Phones) */
