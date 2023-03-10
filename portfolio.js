@@ -49,3 +49,50 @@ fetch("projects.json")
       cardContainer.appendChild(cardElement);
     });
   });
+
+// Load the Gmail API client library
+gapi.load("client:auth2", () => {
+  gapi.client
+    .init({
+      apiKey: "YOUR_API_KEY",
+      clientId: "YOUR_CLIENT_ID",
+      discoveryDocs: [
+        "https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest",
+      ],
+      scope: "https://www.googleapis.com/auth/gmail.compose",
+    })
+    .then(() => {
+      // Get the form element
+      const form = document.querySelector("#contact-form");
+
+      // Handle form submission
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        // Get the form data
+        const formData = new FormData(event.target);
+
+        // Send the form data using the Gmail API
+        const message = [
+          "To: josehcortes02@gmail.com",
+          "Subject: " + formData.get("subject"),
+          "",
+          formData.get("message"),
+        ].join("\r\n");
+
+        const base64EncodedMessage = btoa(message);
+        const request = gapi.client.gmail.users.messages.send({
+          userId: "me",
+          resource: {
+            raw: base64EncodedMessage,
+          },
+        });
+
+        request.execute(() => {
+          // Show a success message to the user
+          alert("Your message was sent successfully!");
+          form.reset();
+        });
+      });
+    });
+});
