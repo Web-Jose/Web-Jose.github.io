@@ -15,7 +15,7 @@ courses.forEach((course) => {
 const cardContainer = document.querySelector(".CardContainer");
 
 // Fetch the JSON data
-fetch("portfolio.json")
+fetch("projects.json")
   .then((response) => response.json())
   .then((data) => {
     // Loop through the array of cards
