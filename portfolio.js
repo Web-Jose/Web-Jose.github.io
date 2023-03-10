@@ -50,6 +50,11 @@ fetch("projects.json")
     });
   });
 
+gapi.load('auth2', function() {
+  gapi.auth2.init();
+});
+
+
 // Load the Gmail API client library
 gapi.load("client:auth2", () => {
   gapi.client
