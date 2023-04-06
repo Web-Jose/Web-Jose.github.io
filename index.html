@@ -22,7 +22,7 @@
   <header>
     <a href="index.html" class="Title">Jose Cortes</a>
     <nav>
-      <a href="index.html"
+      <a href="#Home"
         ><i class="fa-solid fa-house" style="color: #efedd5"></i>Home</a
       >
       <a href="#aboutmeSec"
@@ -41,7 +41,7 @@
   <body>
     <main>
       <!-- Home Section -->
-      <div class="HomeSection">
+      <section class="HomeSection" id="Home">
         <!-- First square -->
         <div class="square" id="sqrMe">
           <div class="ProfileIMG"></div>
@@ -92,7 +92,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Scroll to next section -->
       <a href="#aboutmeSec" class="scroll-to-button">
@@ -100,7 +100,7 @@
       </a>
 
       <!-- About Section -->
-      <div class="AboutSection" id="aboutmeSec">
+      <section class="AboutSection" id="aboutmeSec">
         <div class="PicABO">
           <div class="PicSQR">
             <img src="AbPic.jpg" alt="About me picture" />
@@ -199,7 +199,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Scroll to next section -->
       <a href="#projects" class="scroll-to-button">
@@ -207,82 +207,86 @@
       </a>
 
       <!-- Projects Section -->
-      <div class="ProjectsSection" id="projects">
+      <section class="ProjectsSection" id="projects">
         <h1 class="Title" id="green">Projects</h1>
         <div class="CardContainer" id="card-container"></div>
-      </div>
+      </section>
       <!-- Experiences 
       <div class="ExperienceSection">
         <h1 class="Title" id="green">Experiences</h1>
         <div class="CardContainer" id=""></div>
       </div>
       Not sure what to put -->
-      <footer>
-        <div id="contact" class="contactform">
-          <h1 class="Title">Get In Touch</h1>
-          <h1 class="sub-text">
-            Because Of The Web Hoster Being GitHub This Form Does Not Work;
-            Please Use Email
-          </h1>
-          <form id="contact-form" name="contact-form">
-            <label for="name">Name:</label><br />
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name..."
-              required
-            />
-            <label for="email">Email:</label><br />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your Email..."
-              required
-            />
-            <label for="subject">Subject:</label><br />
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Subject..."
-            />
-            <label for="message">Message:</label><br />
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Type your message here..."
-              required
-            ></textarea>
-            <input id="submit" type="submit" value="Submit" />
-          </form>
-        </div>
+      <section id="contact">
+        <footer>
+          <section class="contactform">
+            <h1 class="Title">Get In Touch</h1>
+            <h1 class="sub-text">
+              Because Of The Web Hoster Being GitHub This Form Does Not Work;
+              Please Use Email
+            </h1>
+            <form id="contact-form" name="contact-form">
+              <label for="name">Name:</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name..."
+                required
+              />
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email..."
+                required
+              />
+              <label for="subject">Subject:</label><br />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject..."
+              />
+              <label for="message">Message:</label><br />
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Type your message here..."
+                required
+              ></textarea>
+              <input id="submit" type="submit" value="Submit" />
+            </form>
+          </section>
 
-        <a href="mailto:josehcortes02@gmail.com" class="email">
-          <img class="e-icon" src="Email.svg" />
-          JoseHCortes02@gmail.com
-        </a>
-        <div class="socials">
-          Connect with me:
-          <div class="social-icons">
-            <a href="https://github.com/Web-Jose"
-              ><img class="icon" src="icons8-github.svg" alt="GitHub icon"
-            /></a>
-            <a href="https://www.linkedin.com/in/webjose/"
-              ><img class="icon" src="icons8-linkedin.svg" alt="LinkedIn icon"
-            /></a>
-            <a href="https://www.instagram.com/weebjose/"
-              ><img
-                class="icon"
-                src="icons8-instagram.svg"
-                alt="Instagram icon"
-            /></a>
+          <a href="mailto:josehcortes02@gmail.com" class="email">
+            <img class="e-icon" src="Email.svg" />
+            JoseHCortes02@gmail.com
+          </a>
+          <div class="socials">
+            Connect with me:
+            <div class="social-icons">
+              <a href="https://github.com/Web-Jose"
+                ><img class="icon" src="icons8-github.svg" alt="GitHub icon"
+              /></a>
+              <a href="https://www.linkedin.com/in/webjose/"
+                ><img
+                  class="icon"
+                  src="icons8-linkedin.svg"
+                  alt="LinkedIn icon"
+              /></a>
+              <a href="https://www.instagram.com/weebjose/"
+                ><img
+                  class="icon"
+                  src="icons8-instagram.svg"
+                  alt="Instagram icon"
+              /></a>
+            </div>
+            <div class="copyright">Copyright &copy Jose Cortes, 2023</div>
           </div>
-
-          <div class="copyright">Copyright &copy Jose Cortes, 2023</div>
-        </div>
-      </footer>
+        </footer>
+      </section>
     </main>
   </body>
 </html>
