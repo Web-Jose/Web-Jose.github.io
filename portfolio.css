@@ -231,20 +231,26 @@ section[id] {
 
 .AboutSection {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-top: 1%;
+  justify-content: space-evenly;
 }
 .PicABO {
-  width: 43%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.PicSQR {
+.AboutPicture {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.PicSQR img {
-  width: 35%;
+.PicSQR {
+  background-image: url(AbPic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40%;
+  padding-top: 40%;
   border-radius: 50%;
 }
 .AboutSection .Title {
@@ -254,7 +260,7 @@ section[id] {
   line-height: 0;
 }
 .SumSquare {
-  width: 100%;
+  width: 90%;
   background-color: #266752;
   border-radius: 0.625em;
   padding: 1.25em;
@@ -263,7 +269,7 @@ section[id] {
   align-items: center;
 }
 .EduSQR {
-  width: 43%;
+  width: 45%;
   background-color: #266752;
   border-radius: 0.625em;
   padding: 1.25em;
@@ -318,6 +324,7 @@ section[id] {
   background-color: #266752;
   position: relative;
   overflow: hidden;
+  border-radius: 1em;
 }
 .front {
   width: 100%;
@@ -365,6 +372,7 @@ section[id] {
   padding: 0.25em;
   white-space: nowrap;
   text-align: center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .buttons a:hover {
   color: #dea450;
@@ -505,6 +513,52 @@ footer textarea {
 
 /* Small Devices (Tablets) */
 @media only screen and (min-width: 426px) and (max-width: 768px) {
+  .square {
+    width: 40%;
+  }
+  .ProjectsIMG {
+    margin-top: -9em;
+  }
+  #Home {
+    margin-top: -17em;
+  }
+  .SkillIMG {
+    margin-top: -8em;
+    width: 30%;
+    padding-top: 30%;
+  }
+  #sqrSki {
+    margin-top: 8em;
+    width: 90%;
+  }
+  .SkillCon {
+    width: 16%;
+    padding-top: 16%;
+  }
+  .scroll-to-button img {
+    width: 7%;
+  }
+  .AboutSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  .PicABO {
+    width: 100%;
+  }
+  .PicSQR {
+    width: 30%;
+    padding-top: 30%;
+  }
+  .EduSQR {
+    width: 90%;
+  }
+  .card {
+    width: 90%;
+  }
+  .front {
+    height: 8em;
+  }
 }
 
 /* Medium Devices (Laptops and Desktops) */
