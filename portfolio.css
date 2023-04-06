@@ -1,0 +1,468 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.Title {
+  font: 2em "Lora";
+  color: #efedd5;
+  line-height: 0.25;
+}
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2.5em;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #266752;
+  padding: 0.25em;
+  border-bottom: 0.2em solid #efedd5;
+}
+header .Title {
+  text-decoration: none;
+  margin-right: auto;
+  padding-left: 0.5em;
+}
+header .Title:hover {
+  color: #dea450;
+}
+/* Tabs */
+header nav {
+  display: flex;
+  gap: 1em;
+  padding-right: 1em;
+}
+nav a {
+  color: #efedd5;
+  font-size: 1em;
+  text-decoration: none;
+  font-family: Lato;
+}
+nav a:hover,
+nav a:active {
+  color: #dea450;
+}
+
+/* Body */
+body {
+  background-color: #efedd5;
+  display: flex;
+  align-items: center;
+  padding-top: 15em;
+  margin: 0;
+}
+/* Home Section */
+.HomeSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-bottom: 1%;
+}
+#sqrMe {
+  order: 2;
+}
+#sqrPro {
+  order: 1;
+}
+#sqrSki {
+  order: 3;
+}
+.square {
+  width: 27%;
+  background-color: #266752;
+  border-radius: 0.625em;
+  padding: 1.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ProfileIMG {
+  background-image: url(Me2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding-top: 100%;
+  margin-top: -10em;
+  border-radius: 50%;
+}
+.ProjectsIMG {
+  background-image: url(Pokemon.jpeg);
+  background-blend-mode: lighten;
+  background-color: #266752;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 70%;
+  padding-top: 70%;
+  margin-top: -10em;
+  border-radius: 50%;
+}
+.SkillIMG {
+  background-image: url(Coding.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 70%;
+  padding-top: 70%;
+  margin-top: -10em;
+  border-radius: 50%;
+}
+.sub-text {
+  color: #efedd5;
+  font: 1em Lato;
+  text-align: center;
+}
+.LMButton {
+  text-align: center;
+  margin-top: 1.5em;
+  width: 100%;
+}
+.button {
+  font-family: Lato;
+}
+a.button {
+  font-size: 2em;
+  padding: 0.25em;
+  background-color: #dea450;
+  color: #0a1823;
+  border-radius: 1em;
+  text-decoration: none;
+}
+.button:hover,
+.button:active {
+  background-color: #0a1823;
+  color: #dea450;
+  cursor: pointer;
+}
+/* Skills Section */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#cpp {
+  background-image: url(icons8-c++.svg);
+}
+.SkillCon {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding-top: 100%;
+}
+/*
+.skills img {
+  width: 40%;
+  height: auto;
+  margin: 5px;
+}
+*/
+
+.scroll-to-button {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.scroll-to-button img {
+  width: 3%;
+}
+
+header[id],
+div[id] {
+  padding-top: 3.4em;
+  margin-top: -3.4em;
+}
+
+.AboutSection {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 1%;
+}
+.PicABO {
+  width: 43%;
+}
+.PicSQR {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.PicSQR img {
+  width: 35%;
+  border-radius: 50%;
+}
+.AboutSection .Title {
+  color: #efedd5;
+  text-align: center;
+  width: 100%;
+  line-height: 0;
+}
+.SumSquare {
+  width: 100%;
+  background-color: #266752;
+  border-radius: 0.625em;
+  padding: 1.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.EduSQR {
+  width: 43%;
+  background-color: #266752;
+  border-radius: 0.625em;
+  padding: 1.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Courses {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.Courses::before {
+  content: "\e5cf";
+  font-family: "Material Symbols Rounded";
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.Info {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+/* Projects Section */
+.ProjectsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+}
+#green {
+  color: #266752;
+}
+.CardContainer {
+  display: flex;
+  gap: 1%;
+  row-gap: 1em;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.card {
+  width: 45%;
+  background-color: #266752;
+  position: relative;
+  overflow: hidden;
+}
+.front {
+  width: 100%;
+  font: 2em "Lora";
+  color: #efedd5;
+  height: 10em;
+  background-color: rgba(0, 166, 127, 0.2);
+  background-blend-mode: screen;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: #0a1823 1px 0 0.625em;
+}
+.expandable {
+  position: absolute;
+  top: 100%;
+  transition: top 1s ease-in-out;
+  height: 100%;
+  width: 100%;
+  background-color: #266752;
+  color: #efedd5;
+  font: 1em Lato;
+  text-align: center;
+}
+.card:hover .expandable {
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 0.5em;
+}
+.buttons a {
+  width: 25%;
+  text-decoration: none;
+  color: #0a1823;
+  background-color: #dea450;
+  border-radius: 50%;
+  padding: 0.25em;
+  white-space: nowrap;
+  text-align: center;
+}
+.buttons a:hover {
+  color: #dea450;
+  background-color: #0a1823;
+}
+footer {
+  background-color: #266752;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contactform {
+  width: 70%;
+}
+form {
+  text-align: left;
+}
+label {
+  font: 1em "Lato";
+  color: #efedd5;
+}
+footer input {
+  padding: 0.625em;
+  border-radius: 0.625em;
+  font-family: "Lato";
+  width: 100%;
+  margin: 0.625em 0;
+}
+footer textarea {
+  padding: 0.625em;
+  border-radius: 0.625em;
+  font-family: "Lato";
+  width: 100%;
+  margin: 0.625em 0 0 0;
+  resize: vertical;
+}
+#submit {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0.625em;
+  border: none;
+  font: 1em "Lato";
+  background-color: #dea450;
+  color: #efedd5;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+#submit:active {
+  background-color: #0a1823;
+  color: #dea450;
+}
+.e-icon {
+  width: 25px;
+}
+.email {
+  font: 1em "Lato";
+  color: #efedd5;
+  margin-top: 0.5em;
+  text-decoration: none;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+.socials {
+  font: 1em "Lato";
+  color: #efedd5;
+  margin: 1em 0;
+}
+.icon {
+  width: 40px;
+  fill: orange;
+}
+
+/* Extra Small Devices (Mobile Phones) */
+@media only screen and (max-width: 425px) {
+  header nav {
+    display: none;
+  }
+  .HomeSection {
+    flex-direction: column;
+    row-gap: 10em;
+    flex-wrap: nowrap;
+    width: 80%;
+  }
+  .square {
+    width: 100%;
+    align-self: center;
+  }
+  #sqrMe {
+    order: 1;
+  }
+  #sqrPro {
+    order: 2;
+  }
+  #sqrSki {
+    order: 3;
+  }
+  .scroll-to-button img {
+    width: 10%;
+  }
+  .AboutSection {
+    width: 100%;
+    align-content: center;
+    flex-direction: column;
+  }
+  .PicABO {
+    width: 80%;
+    flex-direction: column;
+  }
+  .PicSQR img {
+    width: 60%;
+  }
+  .SumSquare {
+    margin-top: 1em;
+  }
+  .EduSQR {
+    margin-top: 1em;
+    width: 80%;
+  }
+  .card {
+    width: 45%;
+  }
+  .expandable {
+    width: 45%;
+  }
+  .card:active .expandable {
+    display: block;
+  }
+}
+
+/* Small Devices (Tablets) */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+}
+
+/* Medium Devices (Laptops and Desktops) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+}
+
+/* Large Devices (Large Laptops and Desktops) */
+@media only screen and (min-width: 1201px) {
+}

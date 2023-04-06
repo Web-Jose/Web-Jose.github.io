@@ -1,0 +1,37 @@
+[
+  {
+    "backgroundImage": "ilya-pavlov-OqtafYT5kTw-unsplash.jpg",
+    "cardName": "Sorting Algorithms Benchmark",
+    "description": "This code defines a class called MyArray which generates an array of 10000 random integers between 0-999, and then sorts the array using five different algorithms: Selection Sort, Insertion Sort, Bubble Sort, Merge Sort, and Quick Sort. The sorting algorithms are timed and the durations are stored in a vector called TimeCodes. The MyArray class has methods that make a copy of the original array, and then sort these copies using each of the algorithms. The sorted arrays are printed out to the console for visualization. The duration of each algorithm execution is printed out to the console as well. The program uses C++ standard libraries: iostream, vector, and chrono.",
+    "liveDemoLink": "https://onlinegdb.com/t9OTlGKb7",
+    "sourceCodeLink": "https://github.com/Web-Jose/Sorting-Algorithms-Benchmark"
+  },
+  {
+    "backgroundImage": "delaney-van-HqA7l8IbhmY-unsplash.jpg",
+    "cardName": "Movie & Category Organizer",
+    "description": "The Movie and Category Organizer is a C++ program developed for a CSCI 41 project, designed to help users create, manage, and organize movies into different categories. The program uses classes such as Date, Movie, MovieCLL, and Category to hold and organize necessary information, with a circular linked list implemented to hold the movies of each category. Users can insert, delete, and search for movies in specific categories, and the program also includes a vector for easy testing. The Movie and Category Organizer is a practical tool that offers an opportunity to practice object-oriented programming and problem-solving abilities, while keeping movie collections organized and easily accessible.",
+    "liveDemoLink": "https://onlinegdb.com/rASlXnQBo",
+    "sourceCodeLink": "https://github.com/Web-Jose/Movie-Category-Organizer"
+  },
+  {
+    "backgroundImage": "towfiqu-barbhuiya-em5w9_xj3uU-unsplash.jpg",
+    "cardName": "Password Generator",
+    "description": "This is a C++ program that generates a random password based on user specifications. The user is prompted to input the desired password length and whether to include lowercase and/or uppercase letters, numbers, and symbols. The program includes functions to ask for and determine each specification, as well as functions to generate random lowercase letters, uppercase letters, numbers, and symbols. The final function assembles the password based on the specifications provided by the user. The program also includes fail checkers to ensure that the user input is valid. If the user does not make any password specifications, the program will output a message stating this and terminate.",
+    "liveDemoLink": "https://onlinegdb.com/KnkVhUm6a",
+    "sourceCodeLink": "https://github.com/Web-Jose/Password-Generator"
+  },
+  {
+    "backgroundImage": "HomepageShot.png",
+    "cardName": "Building My Portfolio",
+    "description": "I created a responsive portfolio website to showcase my programming projects using HTML, CSS, and JavaScript. The website includes an interactive section where visitors can click on each project card to reveal more details about the project, such as its description, live demo link, and source code link. To populate the project cards, I used JSON data and dynamically generated the card elements with JavaScript. The website also features a navigation menu that smoothly scrolls to each section, as well as a responsive design that adapts to different screen sizes. Through this project, I practiced my front-end web development skills and learned how to effectively use JavaScript to manipulate the DOM and create dynamic web content.",
+    "liveDemoLink": "http://web-jose.github.io/",
+    "sourceCodeLink": "https://github.com/Web-Jose/Web-Jose.github.io"
+  },
+  {
+    "backgroundImage": "Pokegear-phone.png",
+    "cardName": "PokeGear Radio",
+    "description": "The finished product of the PokeGear Radio project is a fully functional music player with a Pokemon theme. The player consists of a visually appealing HTML page with graphics, buttons, and draggable elements. The user can listen to songs from different regions of the main pokemon games, with the music player randomly selecting songs to play. The user can control playback using buttons to play, pause, skip to the next song, loop songs, and adjust the volume. The clock on the page will also update in real-time. The user can drag a globe selector to change the region from which songs are played, adding an interactive element to the player. The project is planned to work seamlessly, with the user having an enjoyable and interactive experience while listening to music.",
+    "liveDemoLink": "http://web-jose.github.io/",
+    "sourceCodeLink": "https://github.com/Web-Jose/Web-Jose.github.io"
+  }
+]
