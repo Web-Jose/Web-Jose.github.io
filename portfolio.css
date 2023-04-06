@@ -6,6 +6,7 @@ html {
   font: 2em "Lora";
   color: #efedd5;
   line-height: 0.25;
+  transition: color 0.3s ease-in-out;
 }
 /* Header */
 header {
@@ -44,11 +45,11 @@ nav a {
   display: flex;
   gap: 0.5em;
   border-bottom: #efedd5 solid 0em;
-  transition: border-bottom 0.3s ease-in-out;
+  transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 nav a i {
   opacity: 0%;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 nav a:hover,
 nav a:active {
@@ -62,6 +63,10 @@ nav a:active i {
 
 nav a.active {
   border-bottom: #efedd5 solid 0.1em;
+}
+nav a.active:hover,
+nav a.active:active {
+  border-color: #dea450;
 }
 
 nav a.active i {
@@ -159,6 +164,7 @@ a.button {
   color: #0a1823;
   border-radius: 1em;
   text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .button:hover,
 .button:active {
@@ -382,8 +388,8 @@ label {
   color: #efedd5;
 }
 #contact {
-  padding-top: 15em;
-  margin-top: -15em;
+  padding-top: 17em;
+  margin-top: -17em;
 }
 footer input {
   padding: 0.625em;
@@ -412,8 +418,10 @@ footer textarea {
   border-radius: 5px;
   width: 100%;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-#submit:active {
+#submit:active,
+#submit:hover {
   background-color: #0a1823;
   color: #dea450;
 }
