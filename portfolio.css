@@ -41,10 +41,17 @@ nav a {
   font-size: 1em;
   text-decoration: none;
   font-family: Lato;
+  display: flex;
+  gap: 0.5em;
 }
 nav a:hover,
 nav a:active {
   color: #dea450;
+}
+
+nav a:hover i,
+nav a:active i {
+  color: #dea450 !important;
 }
 
 /* Body */
@@ -146,21 +153,40 @@ a.button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: inherit;
+  flex-wrap: wrap;
 }
-#cpp {
+#Cpp {
   background-image: url(icons8-c++.svg);
 }
+#Office {
+  background-image: url(icons8-office-365.svg);
+}
+#HTML {
+  background-image: url(icons8-html-5.svg);
+}
+#CSS {
+  background-image: url(icons8-css3.svg);
+}
+#Google {
+  background-image: url(icons8-google.svg);
+}
+#Adobe {
+  background-image: url(icons8-adobe.svg);
+}
+
 .SkillCon {
-  background-size: cover;
+  width: 30%;
+  padding-top: 30%;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
-  padding-top: 100%;
+  background-size: contain;
 }
 /*
 .skills img {
@@ -366,7 +392,7 @@ footer textarea {
   border: none;
   font: 1em "Lato";
   background-color: #dea450;
-  color: #efedd5;
+  color: #0a1823;
   font-weight: 600;
   border-radius: 5px;
   width: 100%;
@@ -395,7 +421,6 @@ footer textarea {
 }
 .icon {
   width: 40px;
-  fill: orange;
 }
 
 /* Extra Small Devices (Mobile Phones) */
