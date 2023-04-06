@@ -43,6 +43,12 @@ nav a {
   font-family: Lato;
   display: flex;
   gap: 0.5em;
+  border-bottom: #efedd5 solid 0em;
+  transition: border-bottom 0.3s ease-in-out;
+}
+nav a i {
+  opacity: 0%;
+  transition: opacity 0.3s ease-in-out;
 }
 nav a:hover,
 nav a:active {
@@ -54,6 +60,14 @@ nav a:active i {
   color: #dea450 !important;
 }
 
+nav a.active {
+  border-bottom: #efedd5 solid 0.1em;
+}
+
+nav a.active i {
+  opacity: 100%;
+}
+
 /* Body */
 body {
   background-color: #efedd5;
@@ -63,6 +77,10 @@ body {
   margin: 0;
 }
 /* Home Section */
+#Home {
+  padding-top: 15em;
+  margin-top: -15em;
+}
 .HomeSection {
   display: flex;
   justify-content: space-around;
@@ -188,13 +206,6 @@ a.button {
   background-position: center;
   background-size: contain;
 }
-/*
-.skills img {
-  width: 40%;
-  height: auto;
-  margin: 5px;
-}
-*/
 
 .scroll-to-button {
   cursor: pointer;
@@ -207,7 +218,7 @@ a.button {
 }
 
 header[id],
-div[id] {
+section[id] {
   padding-top: 3.4em;
   margin-top: -3.4em;
 }
@@ -369,6 +380,10 @@ form {
 label {
   font: 1em "Lato";
   color: #efedd5;
+}
+#contact {
+  padding-top: 15em;
+  margin-top: -15em;
 }
 footer input {
   padding: 0.625em;
