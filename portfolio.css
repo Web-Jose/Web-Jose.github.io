@@ -483,10 +483,15 @@ footer textarea {
   #sqrSki {
     order: 3;
   }
+  .Courses::before {
+    display: none;
+  }
+  .Courses {
+    text-align: left;
+  }
   .scroll-to-button img {
     width: 10%;
   }
-
   .AboutSection {
     flex-direction: column;
     align-items: center;
