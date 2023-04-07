@@ -83,3 +83,23 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// Get all the .card elements
+const cards = document.querySelectorAll(".card");
+
+// Calculate the maximum height of .expandable elements
+let maxHeight = 0;
+cards.forEach((card) => {
+  const expandable = card.querySelector(".expandable");
+  const expandableHeight = expandable.getBoundingClientRect().height;
+  if (expandableHeight > maxHeight) {
+    maxHeight = expandableHeight;
+  }
+});
+
+// Set the height of .card elements to the maximum height of .expandable elements
+cards.forEach((card) => {
+  card.style.height = `${
+    maxHeight + card.querySelector(".front").getBoundingClientRect().height
+  }px`;
+});

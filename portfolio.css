@@ -150,9 +150,12 @@ body {
   text-align: center;
 }
 .LMButton {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
   text-align: center;
-  margin-top: 1.5em;
   width: 100%;
+  padding-top: 0.5em;
 }
 .button {
   font-family: Lato;
@@ -325,12 +328,14 @@ section[id] {
   position: relative;
   overflow: hidden;
   border-radius: 1em;
+  height: auto;
 }
 .front {
+  position: absolute;
+  height: 100%;
   width: 100%;
   font: 2em "Lora";
   color: #efedd5;
-  height: 10em;
   background-color: rgba(0, 166, 127, 0.2);
   background-blend-mode: screen;
   background-size: cover;
@@ -343,7 +348,7 @@ section[id] {
   text-shadow: #0a1823 1px 0 0.625em;
 }
 .expandable {
-  position: absolute;
+  position: relative;
   top: 100%;
   transition: top 1s ease-in-out;
   height: 100%;
@@ -463,10 +468,10 @@ footer textarea {
     flex-direction: column;
     row-gap: 10em;
     flex-wrap: nowrap;
-    width: 80%;
+    width: 100%;
   }
   .square {
-    width: 100%;
+    width: 80%;
     align-self: center;
   }
   #sqrMe {
@@ -481,33 +486,27 @@ footer textarea {
   .scroll-to-button img {
     width: 10%;
   }
+
   .AboutSection {
-    width: 100%;
-    align-content: center;
     flex-direction: column;
+    align-items: center;
+    gap: 1em;
   }
   .PicABO {
-    width: 80%;
-    flex-direction: column;
+    width: 90%;
   }
-  .PicSQR img {
-    width: 60%;
-  }
-  .SumSquare {
-    margin-top: 1em;
+  .PicSQR {
+    width: 50%;
+    padding-top: 50%;
   }
   .EduSQR {
-    margin-top: 1em;
     width: 80%;
   }
   .card {
-    width: 45%;
+    width: 90%;
   }
-  .expandable {
-    width: 45%;
-  }
-  .card:active .expandable {
-    display: block;
+  .contactform {
+    width: 80%;
   }
 }
 
@@ -556,15 +555,12 @@ footer textarea {
   .card {
     width: 90%;
   }
-  .front {
-    height: 8em;
-  }
 }
 
 /* Medium Devices (Laptops and Desktops) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 }
 
 /* Large Devices (Large Laptops and Desktops) */
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1025px) {
 }
