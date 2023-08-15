@@ -31,7 +31,7 @@
     "backgroundImage": "pokegear-phone.png",
     "cardName": "PokeGear Radio",
     "description": "The finished product of the PokeGear Radio project is a fully functional music player with a Pokemon theme. The player consists of a visually appealing HTML page with graphics, buttons, and draggable elements. The user can listen to songs from different regions of the main pokemon games, with the music player randomly selecting songs to play. The user can control playback using buttons to play, pause, skip to the next song, loop songs, and adjust the volume. The clock on the page will also update in real-time. The user can drag a globe selector to change the region from which songs are played, adding an interactive element to the player. The project is planned to work seamlessly, with the user having an enjoyable and interactive experience while listening to music.",
-    "liveDemoLink": "http://web-jose.github.io/",
-    "sourceCodeLink": "https://github.com/Web-Jose/Web-Jose.github.io"
+    "liveDemoLink": "/#",
+    "sourceCodeLink": "/#"
   }
 ]

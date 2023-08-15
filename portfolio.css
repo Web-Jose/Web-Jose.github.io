@@ -207,6 +207,15 @@ a.button {
 #Adobe {
   background-image: url(icons8-adobe.svg);
 }
+#JS {
+  background-image: url(Images-Used/JS-Icon.svg);
+}
+#JSON {
+  background-image: url(Images-Used/JSON-Icon.svg);
+}
+#PHP {
+  background-image: url(Images-Used/PHP-Logo.svg);
+}
 
 .SkillCon {
   width: 30%;
@@ -248,7 +257,7 @@ section[id] {
   justify-content: center;
 }
 .PicSQR {
-  background-image: url(AbPic.jpg);
+  background-image: url(Images-Used/Red-Jacket.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -536,8 +545,8 @@ footer textarea {
     width: 90%;
   }
   .SkillCon {
-    width: 16%;
-    padding-top: 16%;
+    width: 20%;
+    padding-top: 20%;
   }
   .scroll-to-button img {
     width: 7%;
