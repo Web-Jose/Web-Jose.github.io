@@ -419,6 +419,7 @@ footer input {
   font-family: "Lato";
   width: 100%;
   margin: 0.625em 0;
+  border: none;
 }
 footer textarea {
   padding: 0.625em;
