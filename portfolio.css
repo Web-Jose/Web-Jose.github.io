@@ -113,7 +113,7 @@ body {
   align-items: center;
 }
 .ProfileIMG {
-  background-image: url(Me2.jpg);
+  background-image: url(Index-Uploads/Images/Me2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -123,7 +123,7 @@ body {
   border-radius: 50%;
 }
 .ProjectsIMG {
-  background-image: url(Pokemon.jpeg);
+  background-image: url(Index-Uploads/Images/Pokemon.jpeg);
   background-blend-mode: lighten;
   background-color: #266752;
   background-size: cover;
@@ -135,7 +135,7 @@ body {
   border-radius: 50%;
 }
 .SkillIMG {
-  background-image: url(Coding.jpg);
+  background-image: url(Index-Uploads/Images/Coding.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -190,31 +190,31 @@ a.button {
   flex-wrap: wrap;
 }
 #Cpp {
-  background-image: url(icons8-c++.svg);
+  background-image: url(Index-Uploads/Icons/c++.svg);
 }
 #Office {
-  background-image: url(icons8-office-365.svg);
+  background-image: url(Index-Uploads/Icons/office-365.svg);
 }
 #HTML {
-  background-image: url(icons8-html-5.svg);
+  background-image: url(Index-Uploads/Icons/html-5.svg);
 }
 #CSS {
-  background-image: url(icons8-css3.svg);
+  background-image: url(Index-Uploads/Icons/css3.svg);
 }
 #Google {
-  background-image: url(icons8-google.svg);
+  background-image: url(Index-Uploads/Icons/google.svg);
 }
 #Adobe {
-  background-image: url(icons8-adobe.svg);
+  background-image: url(Index-Uploads/Icons/adobe.svg);
 }
 #JS {
-  background-image: url(Images-Used/JS-Icon.svg);
+  background-image: url(Index-Uploads/Icons/JS-Icon.svg);
 }
 #JSON {
-  background-image: url(Images-Used/JSON-Icon.svg);
+  background-image: url(Index-Uploads/Icons/JSON-Icon.svg);
 }
 #PHP {
-  background-image: url(Images-Used/PHP-Logo.svg);
+  background-image: url(Index-Uploads/Icons/PHP-Logo.svg);
 }
 
 .SkillCon {
@@ -257,7 +257,7 @@ section[id] {
   justify-content: center;
 }
 .PicSQR {
-  background-image: url(Images-Used/Red-Jacket.jpg);
+  background-image: url(Index-Uploads/Images/Red-Jacket.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -344,6 +344,7 @@ section[id] {
   height: 100%;
   width: 100%;
   font: 2em "Lora";
+  font-weight: 600;
   color: #efedd5;
   background-color: rgba(0, 166, 127, 0.2);
   background-blend-mode: screen;
@@ -417,7 +418,7 @@ footer input {
   padding: 0.625em;
   border-radius: 0.625em;
   font-family: "Lato";
-  width: 100%;
+  width: 97%;
   margin: 0.625em 0;
   border: none;
 }
@@ -425,7 +426,7 @@ footer textarea {
   padding: 0.625em;
   border-radius: 0.625em;
   font-family: "Lato";
-  width: 100%;
+  width: 97%;
   margin: 0.625em 0 0 0;
   resize: vertical;
 }
