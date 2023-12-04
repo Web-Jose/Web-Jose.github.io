@@ -16,35 +16,35 @@
   {
     "backgroundImage": "Index-Uploads/Images/Dining-Hall.jpg",
     "cardName": "Dynamic Dining Hall Menu Integration",
-    "description": "Integrated the weekly menu onto the Fresno State Student Housing website using PHP, HTML, CSS, WordPress, Pods Framework plugin, and Shortcode plugin. Increased user engagement by providing real-time updates and a mobile-friendly layout. Overcame challenges in PHP, Pods, and Shortcode with no prior experience.",
+    "description": "As the Sole Developer for Fresno State Student Housing, I innovatively integrated a dynamic weekly menu onto the student housing website using PHP, HTML, CSS, WordPress, Pods Framework plugin, and Shortcode plugin. This project, completed in just a week and a half, significantly enhanced user experience by providing real-time daily menu updates directly on the site, reducing external redirects and thereby decreasing the site's bounce rate. My role involved learning and applying new technologies like Pods, Shortcode, and PHP, and overcoming challenges in layout design and mobile compatibility. Key features included real-time updates, backend interface for administrators, and dynamic display of menu items.",
     "liveDemoLink": "https://fresnostatehousing.org/dining-hall-menu/",
     "sourceCodeLink": "https://github.com/Web-Jose/Dynamic-Dining-Hall-Menu-Integration"
   },
   {
     "backgroundImage": "Index-Uploads/Images/Menu-Dining-Hall.png",
     "cardName": "Automatic Dining Hall Menu Updater",
-    "description": "Automated weekly menu updates for the Fresno State Housing website using Node.js, Axios, PDF-Parse, ChatGPT API, PHP, JSON, and WordPress tools. Developed a script for parsing PDF menus, updating content using PHP, and scheduling with cron jobs.",
+    "description": "This 4-week project automated the weekly menu updates on the Fresno State Housing website using Node.JS, Axios, PDF-Parse, ChatGPT API, PHP, JSON, and WordPress plugins. As the Sole Developer, I created a system that parses PDF menus and updates the site's database using a ChatGPT API-generated script, scheduled to run weekly via cron jobs. This complex integration greatly improved efficiency and adaptability in content management, while enhancing my skills in various technologies and API integration.",
     "liveDemoLink": "https://github.com/Web-Jose/Menu-Updater",
     "sourceCodeLink": "https://github.com/Web-Jose/Menu-Updater"
   },
   {
     "backgroundImage": "Index-Uploads/Images/Bulldog-Living.JPG",
     "cardName": "Bulldog Living",
-    "description": "Developed a section for posting articles on Fresno State Student Housing's website using Figma, WordPress, Elementor, HTML, CSS, JavaScript, and PHP. Features include dynamic article display, responsive carousel, and event sections. Overcame challenges in PHP template loops.",
+    "description": "Bulldog Living is a dynamic web page for Fresno State Student Housing, showcasing student life through articles and event photos. As the Sole Developer and Designer, I used Figma, WordPress, Elementor, HTML, CSS, JavaScript, and PHP to create this page over 3 weeks. The project includes features like a carousel for recent articles and event sections, with PHP template loops ensuring dynamic content display. This project honed my skills in responsive design, PHP, and integrating various web technologies.",
     "liveDemoLink": "https://fresnostatehousing.org/bulldog-living/",
     "sourceCodeLink": "https://github.com/Web-Jose/Bulldog-Living"
   },
   {
     "backgroundImage": "Index-Uploads/Images/Menu-Signage.png",
     "cardName": "Menu Signage",
-    "description": " Designed and developed digital menu signage for Fresno State Student Housing using Figma, Adobe Illustrator, Adobe Photoshop, HTML, CSS, JavaScript, and JSON. The signage is TV responsive, dynamically updates menu items, and has an attractive chalkboard design.",
+    "description": "This 2-week project involved creating digital menu signage for Fresno State Student Housing using Figma, Adobe Illustrator and Photoshop, HTML, CSS, JavaScript, and JSON. Designed to resemble a restaurant menu, the digital signage dynamically displays the current day's menu items, updated weekly by the Automatic Dining Hall Menu Updater. This project enhanced the dining experience for residents by providing real-time information in an engaging, visually appealing format. My role as the Sole Developer included overcoming challenges related to screen size compatibility and readability, demonstrating my versatility in design and web development.",
     "liveDemoLink": "https://web-jose.github.io/Dynamic-Menu-Signage/",
     "sourceCodeLink": "https://github.com/Web-Jose/Dynamic-Menu-Signage"
   },
   {
     "backgroundImage": "Index-Uploads/Images/Move-Info-Countdown.jpeg",
     "cardName": "Countdown Widget",
-    "description": "Created a countdown timer widget for Fresno State Student Housing's Move-In Day page using HTML, JS, CSS, and Elementor Widget Builder. The widget is customizable with parameters for headline, emojis, event date, and style options. Added logic for annual events handling in JavaScript.",
+    "description": "Developed for Fresno State Student Housing's Move-In Day page, this project is a customizable countdown timer widget built using HTML, JS, CSS, and Elementor Widget Builder for WordPress. Completed in 2 days, I was the Sole Developer, overcoming the challenge of creating a year-agnostic timer using JavaScript. The widget features a responsive design, dynamic event date calculation, and customizable appearance, making it an adaptable tool for annual events. This project improved my skills in JavaScript and responsive design.",
     "liveDemoLink": "https://fresnostatehousing.org/move-in-info/",
     "sourceCodeLink": "https://github.com/Web-Jose/Countdown-Widget"
   },
