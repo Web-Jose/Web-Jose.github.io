@@ -14,7 +14,7 @@
     "sourceCodeLink": "https://github.com/Web-Jose/Sorting-Algorithms-Benchmark"
   },
   {
-    "backgroundImage": "Index-Uploads/Images/Dining Hall Menu.JPG",
+    "backgroundImage": "Index-Uploads/Images/Dining-Hall.jpg",
     "cardName": "Dynamic Dining Hall Menu Integration",
     "description": "Integrated the weekly menu onto the Fresno State Student Housing website using PHP, HTML, CSS, WordPress, Pods Framework plugin, and Shortcode plugin. Increased user engagement by providing real-time updates and a mobile-friendly layout. Overcame challenges in PHP, Pods, and Shortcode with no prior experience.",
     "liveDemoLink": "https://fresnostatehousing.org/dining-hall-menu/",
