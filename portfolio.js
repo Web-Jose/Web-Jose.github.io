@@ -103,3 +103,70 @@ cards.forEach((card) => {
     maxHeight + card.querySelector(".front").getBoundingClientRect().height
   }px`;
 });
+
+const searchInput = document.getElementById("searchInput");
+let debounceTimeout;
+
+searchInput.addEventListener("keyup", (e) => {
+  clearTimeout(debounceTimeout);
+  debounceTimeout = setTimeout(() => {
+    const searchString = e.target.value.toLowerCase();
+
+    // Fetch and filter data
+    fetch("projects.json")
+      .then((response) => response.json())
+      .then((data) => {
+        let filteredData = data;
+        if (searchString !== "") {
+          filteredData = data.filter((card) => {
+            return (
+              card.cardName.toLowerCase().includes(searchString) ||
+              card.description.toLowerCase().includes(searchString)
+            );
+          });
+        }
+        displayCards(filteredData);
+      });
+  }, 300); // Adjust the debounce delay as needed (in milliseconds)
+});
+
+function displayCards(data) {
+  cardContainer.innerHTML = ""; // Clear existing cards
+
+  if (data.length === 0) {
+    const noProjectsElement = document.createElement("div");
+    noProjectsElement.id = "NoProjects";
+    noProjectsElement.textContent = "No Projects Found";
+    cardContainer.appendChild(noProjectsElement);
+  } else {
+    data.forEach((card) => {
+      // Create the card element
+      const cardElement = document.createElement("div");
+      cardElement.classList.add("card");
+
+      // Create the front of the card
+      const frontElement = document.createElement("div");
+      frontElement.classList.add("front");
+      frontElement.style.backgroundImage = `url(${card.backgroundImage})`;
+      frontElement.textContent = card.cardName;
+
+      // Create the back of the card
+      const backElement = document.createElement("div");
+      backElement.classList.add("expandable");
+      backElement.innerHTML = `
+        <p>${card.description}</p>
+        <div class="buttons">
+          <a href="${card.liveDemoLink}" target="_blank">Live Demo</a>
+          <a href="${card.sourceCodeLink}" target="_blank">Source Code</a>
+        </div>
+      `;
+
+      // Add the front and back to the card
+      cardElement.appendChild(frontElement);
+      cardElement.appendChild(backElement);
+
+      // Add the card to the container
+      cardContainer.appendChild(cardElement);
+    });
+  }
+}

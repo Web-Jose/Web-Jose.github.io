@@ -322,6 +322,28 @@ section[id] {
 #green {
   color: #266752;
 }
+
+#searchInput {
+  padding: 0.625em;
+  border-radius: 0.625em;
+  font-family: "Lato";
+  font-size: 1em;
+  width: 90%;
+  margin: 0 0 1em 0;
+  border: none;
+}
+
+#NoProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  font-family: "Lato";
+  font-size: 2em;
+  font-weight: bold;
+  color: #266752;
+}
+
 .CardContainer {
   display: flex;
   gap: 1%;
