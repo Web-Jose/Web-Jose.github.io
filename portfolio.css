@@ -123,9 +123,7 @@ body {
   border-radius: 50%;
 }
 .ProjectsIMG {
-  background-image: url(Index-Uploads/Images/Pokemon.jpeg);
-  background-blend-mode: lighten;
-  background-color: #266752;
+  background-image: url(Index-Uploads/Images/Menu-Signage.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- This is the title of the project and the css file link -->
   <head>
+    <!-- Meta tags -->
     <title>Jose's Software Dev Portfolio</title>
     <link rel="icon" href="Index-Uploads/Icons/hello-kitty.svg" />
+    <meta charset="UTF-8" />
+    <meta
+      property="og:image"
+      content="Index-Uploads/Images/web-jose.github.io_.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS and JS -->
     <link rel="stylesheet" type="text/css" href="portfolio.css" />
+    <script src="portfolio.js" defer></script>
+    <script src="form.js" defer></script>
+    <!-- Fonts and Icons -->
+    <link
+      rel="stylesheet"
+      href="https://s.pageclip.co/v1/pageclip.css"
+      media="screen"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -13,22 +28,10 @@
       src="https://kit.fontawesome.com/6b31c68f8b.js"
       crossorigin="anonymous"
     ></script>
-    <script src="portfolio.js" defer></script>
-    <script src="form.js" defer></script>
-    <meta
-      property="og:image"
-      content="Index-Uploads/Images/web-jose.github.io_.png"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://s.pageclip.co/v1/pageclip.css"
-      media="screen"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
     <!-- Google tag (gtag.js) -->
@@ -47,9 +50,10 @@
     </script>
   </head>
 
-  <!-- Header with Tabs Add links to the added sections -->
+  <!-- Header -->
   <header>
     <a href="index.html" class="Title">Jose Cortes</a>
+    <!-- Navigation Bar -->
     <nav>
       <a href="#Home"
         ><i class="fa-solid fa-house" style="color: #efedd5"></i>Home</a
@@ -71,11 +75,12 @@
     </nav>
   </header>
 
+  <!-- Body -->
   <body>
     <main>
       <!-- Home Section -->
       <section class="HomeSection" id="Home">
-        <!-- First square -->
+        <!-- Profile Section -->
         <div class="square" id="sqrMe">
           <div class="ProfileIMG"></div>
           <h1 class="Title">Jose Cortes</h1>
@@ -89,31 +94,27 @@
           </div>
         </div>
 
-        <!-- Second square -->
+        <!-- Recent Projects Section -->
         <div class="square" id="sqrPro">
           <div class="ProjectsIMG"></div>
           <h1 class="Title">Recent Projects</h1>
           <div class="sub-text">
-            The PokeGear Radio project is a music player with a Pokemon theme
-            that plays songs from different regions in the main pokemon games
-            based on the position of the selector. The project consists of an
-            HTML file that defines the structure of the page, a CSS file for
-            styling, a SongPlayer.js file for setting up the audio player and
-            handling song selection and playback, and a Selector.js file that
-            implements a draggable selector on a globe graphic to change the
-            region from which songs are played. Users will be able to listen to
-            Pokemon music, control playback using buttons, and drag the globe
-            selector to play songs from different regions. The music player will
-            randomly select songs to play, and users can loop songs, skip to the
-            next song, and adjust the volume. The clock will also update in
-            real-time.
+            For Fresno State Student Housing, digital signage is used to display
+            weekly menu information to residents. The digital menu, resembling a
+            restaurant menu, is created using Figma for mockups and Adobe tools
+            for design, with HTML, CSS, JavaScript, and JSON for development.
+            Menu items are stored and updated in JSON format, and the design is
+            responsive for 16:9 TV screens. Challenges included ensuring
+            readability and aesthetics on TV screens. Features include dynamic
+            display of menu items, real-time updates, and a user-friendly layout
+            that's visually appealing and easy to maintain.
           </div>
           <div class="LMButton">
             <a href="#projects" class="button">See More</a>
           </div>
         </div>
 
-        <!-- Third Square -->
+        <!-- Skills Section -->
         <div class="square" id="sqrSki">
           <div class="SkillIMG"></div>
           <h1 class="Title">Skills</h1>
