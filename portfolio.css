@@ -4,7 +4,8 @@ html {
 
 .Title {
   font: 2em "Lora";
-  color: #efedd5;
+  font-weight: 600;
+  color: #d2d9d8;
   line-height: 0.25;
   transition: color 0.3s ease-in-out;
 }
@@ -13,15 +14,15 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 2.5em;
+  height: 3em;
   width: 100%;
   z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #266752;
+  background-color: #204359;
   padding: 0.25em;
-  border-bottom: 0.2em solid #efedd5;
+  border-bottom: 0.2em solid #d2d9d8;
 }
 header .Title {
   text-decoration: none;
@@ -29,7 +30,7 @@ header .Title {
   padding-left: 0.5em;
 }
 header .Title:hover {
-  color: #dea450;
+  color: #a5d0e1;
 }
 /* Tabs */
 header nav {
@@ -38,13 +39,13 @@ header nav {
   padding-right: 1em;
 }
 nav a {
-  color: #efedd5;
+  color: #d2d9d8;
   font-size: 1em;
   text-decoration: none;
   font-family: Lato;
   display: flex;
   gap: 0.5em;
-  border-bottom: #efedd5 solid 0em;
+  border-bottom: #d2d9d8 solid 0em;
   transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 nav a i {
@@ -53,20 +54,20 @@ nav a i {
 }
 nav a:hover,
 nav a:active {
-  color: #dea450;
+  color: #a5d0e1;
 }
 
 nav a:hover i,
 nav a:active i {
-  color: #dea450 !important;
+  color: #a5d0e1 !important;
 }
 
 nav a.active {
-  border-bottom: #efedd5 solid 0.1em;
+  border-bottom: #d2d9d8 solid 0.1em;
 }
 nav a.active:hover,
 nav a.active:active {
-  border-color: #dea450;
+  border-color: #a5d0e1;
 }
 
 nav a.active i {
@@ -75,7 +76,7 @@ nav a.active i {
 
 /* Body */
 body {
-  background-color: #efedd5;
+  background-color: #d2d9d8;
   display: flex;
   align-items: center;
   padding-top: 15em;
@@ -90,9 +91,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: stretch;
-  margin: 0 auto;
   flex-wrap: wrap;
-  margin-bottom: 1%;
 }
 #sqrMe {
   order: 2;
@@ -105,7 +104,7 @@ body {
 }
 .square {
   width: 27%;
-  background-color: #266752;
+  background-color: #204359;
   border-radius: 0.625em;
   padding: 1.25em;
   display: flex;
@@ -143,7 +142,7 @@ body {
   border-radius: 50%;
 }
 .sub-text {
-  color: #efedd5;
+  color: #d2d9d8;
   font: 1em Lato;
   text-align: center;
 }
@@ -161,16 +160,16 @@ body {
 a.button {
   font-size: 2em;
   padding: 0.25em;
-  background-color: #dea450;
-  color: #0a1823;
+  background-color: #a5d0e1;
+  color: #080d0c;
   border-radius: 1em;
   text-decoration: none;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .button:hover,
 .button:active {
-  background-color: #0a1823;
-  color: #dea450;
+  background-color: #080d0c;
+  color: #a5d0e1;
   cursor: pointer;
 }
 /* Skills Section */
@@ -186,51 +185,51 @@ a.button {
   align-items: center;
   width: inherit;
   flex-wrap: wrap;
-}
-#Cpp {
-  background-image: url(Index-Uploads/Icons/c++.svg);
-}
-#Office {
-  background-image: url(Index-Uploads/Icons/office-365.svg);
-}
-#HTML {
-  background-image: url(Index-Uploads/Icons/html-5.svg);
-}
-#CSS {
-  background-image: url(Index-Uploads/Icons/css3.svg);
-}
-#Google {
-  background-image: url(Index-Uploads/Icons/google.svg);
-}
-#Adobe {
-  background-image: url(Index-Uploads/Icons/adobe.svg);
-}
-#JS {
-  background-image: url(Index-Uploads/Icons/JS-Icon.svg);
-}
-#JSON {
-  background-image: url(Index-Uploads/Icons/JSON-Icon.svg);
-}
-#PHP {
-  background-image: url(Index-Uploads/Icons/PHP-Logo.svg);
+  row-gap: 1em;
 }
 
 .SkillCon {
   width: 30%;
-  padding-top: 30%;
+  height: max-content;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.SkillCon:hover {
+  transform: scale(1.15);
+}
+
+.SkillCon g {
+  transition: fill 0.2s ease-in-out;
+}
+
+.SkillCon:hover g {
+  fill: #a5d0e1;
+}
+
+.SkillCon .cls-1 {
+  transition: fill 0.2s ease-in-out;
+}
+
+.SkillCon:hover .cls-1 {
+  fill: #a5d0e1;
 }
 
 .scroll-to-button {
   cursor: pointer;
   width: 100%;
+  text-decoration: none;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 1em 0;
 }
-.scroll-to-button img {
-  width: 3%;
+.scroll-to-button i {
+  font-size: 3em;
+  color: #204359;
 }
 
 header[id],
@@ -264,14 +263,15 @@ section[id] {
   border-radius: 50%;
 }
 .AboutSection .Title {
-  color: #efedd5;
+  color: #d2d9d8;
   text-align: center;
   width: 100%;
   line-height: 0;
+  margin: 0.25em 0;
 }
 .SumSquare {
   width: 90%;
-  background-color: #266752;
+  background-color: #204359;
   border-radius: 0.625em;
   padding: 1.25em;
   display: flex;
@@ -280,7 +280,7 @@ section[id] {
 }
 .EduSQR {
   width: 45%;
-  background-color: #266752;
+  background-color: #204359;
   border-radius: 0.625em;
   padding: 1.25em;
   display: flex;
@@ -318,8 +318,9 @@ section[id] {
   align-items: center;
   padding-bottom: 2em;
 }
-#green {
-  color: #266752;
+#AltTitle {
+  color: #204359;
+  margin-top: 0.25em;
 }
 
 #searchInput {
@@ -340,7 +341,7 @@ section[id] {
   font-family: "Lato";
   font-size: 2em;
   font-weight: bold;
-  color: #266752;
+  color: #204359;
 }
 
 .CardContainer {
@@ -354,7 +355,7 @@ section[id] {
 }
 .card {
   width: 45%;
-  background-color: #266752;
+  background-color: #204359;
   position: relative;
   overflow: hidden;
   border-radius: 1em;
@@ -366,8 +367,8 @@ section[id] {
   width: 100%;
   font: 2em "Lora";
   font-weight: 600;
-  color: #efedd5;
-  background-color: rgba(0, 166, 127, 0.2);
+  color: #d2d9d8;
+  background-color: #20435962;
   background-blend-mode: screen;
   background-size: cover;
   background-repeat: no-repeat;
@@ -376,7 +377,7 @@ section[id] {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: #0a1823 1px 0 0.625em;
+  text-shadow: #080d0c 1px 0 0.625em;
 }
 .expandable {
   position: relative;
@@ -384,8 +385,8 @@ section[id] {
   transition: top 1s ease-in-out;
   height: 100%;
   width: 100%;
-  background-color: #266752;
-  color: #efedd5;
+  background-color: #204359;
+  color: #d2d9d8;
   font: 1em Lato;
   text-align: center;
 }
@@ -402,8 +403,8 @@ section[id] {
 .buttons a {
   width: 25%;
   text-decoration: none;
-  color: #0a1823;
-  background-color: #dea450;
+  color: #080d0c;
+  background-color: #a5d0e1;
   border-radius: 50%;
   padding: 0.25em;
   white-space: nowrap;
@@ -411,11 +412,11 @@ section[id] {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .buttons a:hover {
-  color: #dea450;
-  background-color: #0a1823;
+  color: #a5d0e1;
+  background-color: #080d0c;
 }
 footer {
-  background-color: #266752;
+  background-color: #204359;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -429,7 +430,7 @@ form {
 }
 label {
   font: 1em "Lato";
-  color: #efedd5;
+  color: #d2d9d8;
 }
 #contact {
   padding-top: 17em;
@@ -457,8 +458,8 @@ footer textarea {
   padding: 0.625em;
   border: none;
   font: 1em "Lato";
-  background-color: #dea450;
-  color: #0a1823;
+  background-color: #a5d0e1;
+  color: #080d0c;
   font-weight: 600;
   border-radius: 5px;
   width: 100%;
@@ -467,15 +468,15 @@ footer textarea {
 }
 #submit:active,
 #submit:hover {
-  background-color: #0a1823;
-  color: #dea450;
+  background-color: #080d0c;
+  color: #a5d0e1;
 }
 .e-icon {
   width: 25px;
 }
 .email {
   font: 1em "Lato";
-  color: #efedd5;
+  color: #d2d9d8;
   margin-top: 0.5em;
   text-decoration: none;
   display: flex;
@@ -484,7 +485,7 @@ footer textarea {
 }
 .socials {
   font: 1em "Lato";
-  color: #efedd5;
+  color: #d2d9d8;
   margin: 1em 0;
 }
 .icon {
@@ -521,7 +522,7 @@ footer textarea {
   .Courses {
     text-align: left;
   }
-  .scroll-to-button img {
+  .scroll-to-button i {
     width: 10%;
   }
   .AboutSection {
@@ -569,9 +570,9 @@ footer textarea {
   }
   .SkillCon {
     width: 20%;
-    padding-top: 20%;
+    height: 40%;
   }
-  .scroll-to-button img {
+  .scroll-to-button i {
     width: 7%;
   }
   .AboutSection {

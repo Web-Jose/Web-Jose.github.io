@@ -170,3 +170,32 @@ function displayCards(data) {
     });
   }
 }
+
+const svgElements = document.querySelectorAll(".SkillCon");
+
+svgElements.forEach((svg) => {
+  svg.addEventListener("click", () => {
+    const searchTerm = svg.getAttribute("search-term");
+    searchInput.value = searchTerm;
+    triggerSearch(searchTerm); // Call the search function with the search term
+    document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+function triggerSearch(searchString) {
+  // Fetch and filter data
+  fetch("projects.json")
+    .then((response) => response.json())
+    .then((data) => {
+      let filteredData = data;
+      if (searchString !== "") {
+        filteredData = data.filter((card) => {
+          return (
+            card.cardName.toLowerCase().includes(searchString.toLowerCase()) ||
+            card.description.toLowerCase().includes(searchString.toLowerCase())
+          );
+        });
+      }
+      displayCards(filteredData);
+    });
+}
