@@ -1,6 +1,6 @@
 [
   {
-    "backgroundImage": "Index-Uploads/Images/HomepageShot.png",
+    "backgroundImage": "Index-Uploads/Images/Blue-Portfolio.png",
     "cardName": "Building My Portfolio",
     "description": "I created a responsive portfolio website to showcase my programming projects using HTML, CSS, and JavaScript. The website includes an interactive section where visitors can click on each project card to reveal more details about the project, such as its description, live demo link, and source code link. To populate the project cards, I used JSON data and dynamically generated the card elements with JavaScript. The website also features a navigation menu that smoothly scrolls to each section, as well as a responsive design that adapts to different screen sizes. Through this project, I practiced my front-end web development skills and learned how to effectively use JavaScript to manipulate the DOM and create dynamic web content.",
     "liveDemoLink": "http://web-jose.github.io/",
