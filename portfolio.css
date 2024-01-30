@@ -308,7 +308,7 @@ section[id] {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
-  text-align: justify;
+  text-align: left;
 }
 
 /* Expereince Section */
@@ -325,7 +325,7 @@ section[id] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 45%;
+  width: 100%;
   padding: 1em;
   border-radius: 0.625em;
   background-color: #204359;
@@ -654,6 +654,9 @@ footer textarea {
   }
   .EduSQR {
     width: 90%;
+  }
+  .Info {
+    text-align: justify;
   }
   .ExperienceSection {
     width: 100%;
