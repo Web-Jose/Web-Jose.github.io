@@ -332,8 +332,7 @@ section[id] {
 }
 .ExpTitle {
   display: flex;
-  text-align: left;
-  flex-direction: column;
+  justify-content: space-between;
   font: 1.5em "Lato";
   font-weight: bold;
   color: #d2d9d8;
@@ -602,8 +601,15 @@ footer textarea {
   .EduSQR {
     width: 80%;
   }
+  .ExpTitle {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
   .card {
     width: 90%;
+  }
+  .buttons a {
+    width: 30%;
   }
   .contactform {
     width: 80%;
@@ -666,6 +672,10 @@ footer textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .ExpTitle {
+    flex-direction: column;
+    gap: 0.5rem;
   }
   .Experience {
     width: 90%;
