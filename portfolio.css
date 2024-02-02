@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  width: 100%;
+}
+
 .Title {
   font: 2em "Lora";
   font-weight: 600;
@@ -540,6 +544,39 @@ footer textarea {
   width: 2.5em;
 }
 
+/* 404 Page */
+.Error404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 5em 1em 2em 1em;
+  margin-top: -15em;
+  height: 50vh;
+}
+.ErrorTitle {
+  font: 10em "Lora";
+  font-weight: 600;
+  color: #d2d9d8;
+  line-height: 1;
+
+  background-color: #204359;
+  padding: 0.25em;
+  border-radius: 1em;
+  text-align: center;
+}
+.ErrorText {
+  font: 1.5em "Lato";
+  color: #204359;
+  text-align: center;
+}
+.ErrorText a {
+  color: #204359;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /* Extra Small Devices (Mobile Phones) */
 @media only screen and (max-width: 425px) {
   header nav {
@@ -616,6 +653,14 @@ footer textarea {
   }
   .contactform {
     width: 80%;
+  }
+
+  /* 404 Page */
+  .Error404 {
+    height: 60vh;
+  }
+  .ErrorTitle {
+    font: 8em "Lora";
   }
 }
 
