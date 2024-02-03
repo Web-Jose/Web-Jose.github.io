@@ -1,0 +1,23 @@
+name: Deploy to DigitalOcean Droplet
+
+on:
+  push:
+    branches:
+      - main # or any other branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository # This step is required to access the repository files
+        uses: actions/checkout@v2 # This action checks out your repository files to the runner
+
+      - name: Copy repository files to the droplet # This step copies the repository files to the droplet
+        uses: appleboy/scp-action@master # This action copies files to a remote server over SSH
+        with:
+          host: ${{ secrets.DROPLET_IP }} # Your droplet IP address
+          username: root # or your droplet username
+          key: ${{ secrets.SSH_PRIVATE_KEY }} # Your SSH private key
+          port: 22 # or your SSH port if changed
+          source: "." # Copies the whole repo, specify subdirectories or files if needed
+          target: "/path/on/droplet" # Target directory on your droplet
