@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email_message .= "Message:\n$message\n";
 
   // Set email recipient and subject
-  $to = "josehcortes@gmail.com";
+  $to = "josehcortes02@gmail.com";
   $email_subject = "New Contact Form Submission: $subject";
 
   // Set email headers
