@@ -43,6 +43,8 @@
 
       gtag("config", "G-CSN8G33F57");
     </script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <!-- Header -->
@@ -88,7 +90,12 @@
         <footer>
           <section class="contactform">
             <h1 class="Title">Get In Touch</h1>
-            <form action="" method="post" name="contact-form">
+            <form
+              action="/contact.php"
+              method="post"
+              name="contact-form"
+              id="contact-form"
+            >
               <label for="name">Name:</label><br />
               <input
                 type="text"

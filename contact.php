@@ -1,5 +1,4 @@
 <?php
-if (isset($_POST["submit"])) {
   // Only process POST requests
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form field values and sanitize them
@@ -47,4 +46,3 @@ if (isset($_POST["submit"])) {
     // Not a POST request
     echo "Access Denied. You must use POST method to send data.";
   }
-}

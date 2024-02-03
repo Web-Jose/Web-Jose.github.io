@@ -1,3 +1,4 @@
+// Make courses expandable
 const courses = document.querySelectorAll(".Courses");
 
 courses.forEach((course) => {
@@ -12,6 +13,7 @@ courses.forEach((course) => {
   });
 });
 
+// Cards for projects
 const cardContainer = document.querySelector(".CardContainer");
 
 // Fetch the JSON data
@@ -50,7 +52,7 @@ fetch("projects.json")
     });
   });
 
-// Get all the navigation links
+// Make the navigation links active when the corresponding section is in the viewport
 const navLinks = document.querySelectorAll("nav a");
 
 // Add a scroll event listener to the window
@@ -104,6 +106,7 @@ cards.forEach((card) => {
   }px`;
 });
 
+// Search functionality for projects
 const searchInput = document.getElementById("searchInput");
 let debounceTimeout;
 
@@ -171,6 +174,7 @@ function displayCards(data) {
   }
 }
 
+// Skill search functionality
 const svgElements = document.querySelectorAll(".SkillCon");
 
 svgElements.forEach((svg) => {
@@ -182,6 +186,7 @@ svgElements.forEach((svg) => {
   });
 });
 
+// Function to trigger the search
 function triggerSearch(searchString) {
   // Fetch and filter data
   fetch("projects.json")
@@ -199,3 +204,33 @@ function triggerSearch(searchString) {
       displayCards(filteredData);
     });
 }
+
+// Contact form submission
+$(document).ready(function () {
+  // When the form is submitted
+  $("#contact-form").on("submit", function (e) {
+    // Prevent the default form submission
+    e.preventDefault();
+
+    // Serialize the form data
+    var formData = $(this).serialize();
+
+    // Send the form data to the server with AJAX
+    $.ajax({
+      type: "POST",
+      url: "/contact.php",
+      data: formData,
+      success: function (response) {
+        // Handle success (display success message, clear the form, etc.)
+        alert(response);
+        $("#contact-form").trigger("reset");
+      },
+      error: function () {
+        // Handle error (display error message, etc.)
+        alert(
+          "There was an error sending your message. Please try again later."
+        );
+      },
+    });
+  });
+});
