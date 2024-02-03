@@ -21,4 +21,4 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your SSH passphrase
           port: 22 # or your SSH port if changed
           source: "." # Copies the whole repo, specify subdirectories or files if needed
-          target: "/root/CodeByJose" # Target directory on your droplet
+          target: "/var/www/html" # Target directory on your droplet
