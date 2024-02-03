@@ -20,4 +20,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }} # Your SSH private key
           port: 22 # or your SSH port if changed
           source: "." # Copies the whole repo, specify subdirectories or files if needed
-          target: "/path/on/droplet" # Target directory on your droplet
+          target: "/CodeByJose.com" # Target directory on your droplet
