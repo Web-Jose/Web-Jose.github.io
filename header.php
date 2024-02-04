@@ -1,5 +1,3 @@
-<?php ?>
-
 <!-- Header -->
 <header>
     <a href="/" class="Title">Code By Jose</a>

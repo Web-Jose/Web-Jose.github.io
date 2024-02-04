@@ -1,5 +1,3 @@
-<?php ?>
-
 <section id="contact">
         <footer>
           <section class="contactform">
