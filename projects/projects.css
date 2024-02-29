@@ -83,6 +83,7 @@ body {
   align-items: center;
   padding-top: 5em;
   margin: 0;
+  width: 100%;
 }
 
 /* Projects */
@@ -92,7 +93,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding-bottom: 2em;
-  width: 100%;
+  width: 95%;
 }
 
 #AltTitle {
@@ -105,7 +106,7 @@ body {
   border-radius: 0.625em;
   font-family: "Lato";
   font-size: 1em;
-  width: calc(95% - 1.25em);
+  width: calc(100% - 1.25em);
   margin: 0 0 1em 0;
   border: none;
 }
@@ -132,7 +133,7 @@ body {
 .project {
   display: flex;
   flex-direction: row;
-  width: 95%;
+  width: 100%;
   background-color: #204359;
   border-radius: 0.625em;
   overflow: hidden;
@@ -148,7 +149,42 @@ body {
   flex-direction: column;
   gap: 0.5em;
   width: 65%;
-  padding: 0 1em;
+  padding: 1em;
+}
+
+.ProjectTitle {
+  font: bold 1.5em "Lato";
+  color: #d2d9d8;
+}
+
+.ProjectDesc {
+  font: 1em "Lato";
+  color: #d2d9d8;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5em;
+  padding: 0.5em 0;
+  justify-content: flex-end;
+}
+
+.buttons a {
+  padding: 0.25em 0.5em;
+  border-radius: 0.625em;
+  font: bold 1em "Lato";
+  text-decoration: none;
+  color: #204359;
+  background-color: #d2d9d8;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.buttons a:hover,
+.buttons a:active {
+  background-color: #a5d0e1;
+  color: #080d0c;
+  transform: scale(1.05);
 }
 
 /* Footer */
@@ -246,5 +282,49 @@ footer textarea {
   }
   .contactform {
     width: 80%;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .project-image {
+    width: 100%;
+  }
+  .project-info {
+    width: calc(100% - 1em);
+    flex-wrap: wrap;
+    padding: 0.5em;
+  }
+  .ProjectTitle {
+    text-align: center;
+  }
+  .buttons {
+    justify-content: center;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .buttons {
+    padding: 0;
+  }
+}
+
+/* Laptop Xl */
+
+@media only screen and (min-width: 1025px) {
+  #AltTitle {
+    font-size: 3em;
+  }
+  #searchInput {
+    font-size: 1.5em;
+  }
+  .ProjectTitle {
+    font-size: 2em;
+  }
+  .ProjectDesc {
+    font-size: 1.25em;
+  }
+  .buttons a {
+    font-size: 1.25em;
   }
 }
