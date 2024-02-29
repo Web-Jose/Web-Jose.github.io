@@ -37,19 +37,17 @@ function displayProjects(data) {
       projectElement.classList.add("project");
 
       // Create the project image
-      const projectImageContainer = document.createElement("div");
-      projectImageContainer.classList.add("project-image");
       const projectImage = document.createElement("img");
+      projectImage.classList.add("project-image");
       projectImage.src = `../` + project.backgroundImage;
       projectImage.alt = project.cardName;
-      projectImageContainer.appendChild(projectImage);
 
       // Create the project information
       const projectInfo = document.createElement("div");
       projectInfo.classList.add("project-info");
       projectInfo.innerHTML = `
-        <h3>${project.cardName}</h3>
-        <p>${project.description}</p>
+        <span class="ProjectTitle">${project.cardName}</span>
+        <span class="ProjectDesc">${project.description}</span>
         <div class="buttons">
           <a href="${project.liveDemoLink}" target="_blank">Live Demo</a>
           <a href="${project.sourceCodeLink}" target="_blank">Source Code</a>
@@ -57,7 +55,7 @@ function displayProjects(data) {
       `;
 
       // Add the image and information to the project element
-      projectElement.appendChild(projectImageContainer);
+      projectElement.appendChild(projectImage);
       projectElement.appendChild(projectInfo);
 
       // Add the project to the container

@@ -135,16 +135,12 @@ body {
   width: 95%;
   background-color: #204359;
   border-radius: 0.625em;
+  overflow: hidden;
 }
 
 .project-image {
   width: 35%;
-}
-
-.project-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.625em;
+  object-fit: cover;
 }
 
 .project-info {
