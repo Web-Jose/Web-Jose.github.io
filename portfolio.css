@@ -322,8 +322,8 @@ section[id] {
   align-items: center;
 }
 .ExperienceContainer {
-  display: flex;
   width: 94%;
+  display: flex;
 }
 .Experience {
   display: flex;
@@ -351,6 +351,14 @@ section[id] {
   color: #d2d9d8;
   margin: 0.25em 0;
   width: 100%;
+  gap: 0.5em;
+}
+
+ul {
+  margin: 0;
+}
+ul li {
+  line-height: 1.25;
 }
 
 /* Projects Section */
@@ -643,7 +651,12 @@ footer textarea {
   }
   .ExpTitle {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.25rem;
+    margin: 0;
+  }
+  .JobDate {
+    font: bold 0.75em "Lato";
+    text-align: right;
   }
   .card {
     width: 90%;

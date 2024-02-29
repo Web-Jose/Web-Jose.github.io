@@ -1,0 +1,330 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.Title {
+  font: 2em "Lora";
+  font-weight: 600;
+  color: #d2d9d8;
+  line-height: 0.25;
+  transition: color 0.3s ease-in-out;
+}
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3em;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #204359;
+  padding: 0.25em;
+  border-bottom: 0.2em solid #d2d9d8;
+}
+header .Title {
+  text-decoration: none;
+  margin-right: auto;
+  padding-left: 0.5em;
+}
+header .Title:hover {
+  color: #a5d0e1;
+}
+/* Tabs */
+header nav {
+  display: flex;
+  gap: 1em;
+  padding-right: 1em;
+}
+nav a {
+  color: #d2d9d8;
+  font-size: 1em;
+  text-decoration: none;
+  font-family: Lato;
+  display: flex;
+  gap: 0.5em;
+  border-bottom: #d2d9d8 solid 0em;
+  transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+nav a i {
+  opacity: 0%;
+  transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+nav a:hover,
+nav a:active {
+  color: #a5d0e1;
+}
+
+nav a:hover i,
+nav a:active i {
+  color: #a5d0e1 !important;
+}
+
+nav a.active {
+  border-bottom: #d2d9d8 solid 0.1em;
+}
+nav a.active:hover,
+nav a.active:active {
+  border-color: #a5d0e1;
+}
+
+nav a.active i {
+  opacity: 100%;
+}
+
+/* Body */
+
+body {
+  background-color: #d2d9d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5em;
+  margin: 0;
+  width: 100%;
+}
+
+/* Projects */
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+  width: 95%;
+}
+
+#AltTitle {
+  color: #204359;
+  margin-top: 0.25em;
+}
+
+#searchInput {
+  padding: 0.625em;
+  border-radius: 0.625em;
+  font-family: "Lato";
+  font-size: 1em;
+  width: calc(100% - 1.25em);
+  margin: 0 0 1em 0;
+  border: none;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}
+
+#NoProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  font-family: "Lato";
+  font-size: 2em;
+  font-weight: bold;
+  color: #204359;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #204359;
+  border-radius: 0.625em;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 35%;
+  object-fit: cover;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 65%;
+  padding: 1em;
+}
+
+.ProjectTitle {
+  font: bold 1.5em "Lato";
+  color: #d2d9d8;
+}
+
+.ProjectDesc {
+  font: 1em "Lato";
+  color: #d2d9d8;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5em;
+  padding: 0.5em 0;
+  justify-content: flex-end;
+}
+
+.buttons a {
+  padding: 0.25em 0.5em;
+  border-radius: 0.625em;
+  font: bold 1em "Lato";
+  text-decoration: none;
+  color: #204359;
+  background-color: #d2d9d8;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.buttons a:hover,
+.buttons a:active {
+  background-color: #a5d0e1;
+  color: #080d0c;
+  transform: scale(1.05);
+}
+
+/* Footer */
+
+footer {
+  background-color: #204359;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contactform {
+  width: 70%;
+}
+form {
+  text-align: left;
+}
+label {
+  font: 1em "Lato";
+  color: #d2d9d8;
+}
+#contact {
+  padding-top: 17em;
+  margin-top: -17em;
+  width: 100%;
+}
+footer input {
+  padding: 0.625em;
+  border-radius: 0.625em;
+  font-family: "Lato";
+  width: 97%;
+  margin: 0.625em 0;
+  border: none;
+}
+footer textarea {
+  padding: 0.625em;
+  border-radius: 0.625em;
+  font-family: "Lato";
+  width: 97%;
+  margin: 0.625em 0 0 0;
+  resize: vertical;
+}
+#submit {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0.625em;
+  border: none;
+  font: 1em "Lato";
+  background-color: #a5d0e1;
+  color: #080d0c;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+#submit:active,
+#submit:hover {
+  background-color: #080d0c;
+  color: #a5d0e1;
+}
+.email {
+  font: 1em "Lato";
+  color: #d2d9d8;
+  margin-top: 0.5em;
+  text-decoration: none;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+.email svg {
+  width: 1.5em;
+}
+.socials {
+  font: 1em "Lato";
+  color: #d2d9d8;
+  margin: 1em 0;
+}
+.social-icons a {
+  color: #d2d9d8;
+  text-decoration: none;
+}
+.social-icons a:hover svg .st0 {
+  fill: #a5d0e1;
+}
+.icon {
+  width: 2.5em;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 425px) {
+  header nav {
+    display: none;
+  }
+  .contactform {
+    width: 80%;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .project-image {
+    width: 100%;
+  }
+  .project-info {
+    width: calc(100% - 1em);
+    flex-wrap: wrap;
+    padding: 0.5em;
+  }
+  .ProjectTitle {
+    text-align: center;
+  }
+  .buttons {
+    justify-content: center;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .buttons {
+    padding: 0;
+  }
+}
+
+/* Laptop Xl */
+
+@media only screen and (min-width: 1025px) {
+  #AltTitle {
+    font-size: 3em;
+  }
+  #searchInput {
+    font-size: 1.5em;
+  }
+  .ProjectTitle {
+    font-size: 2em;
+  }
+  .ProjectDesc {
+    font-size: 1.25em;
+  }
+  .buttons a {
+    font-size: 1.25em;
+  }
+}
