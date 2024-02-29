@@ -9,3 +9,11 @@ navLinks.forEach((navLink) => {
     navLink.classList.remove("active");
   });
 });
+
+function openNav() {
+  document.getElementById("hamburger-menu").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("hamburger-menu").style.width = "0";
+}

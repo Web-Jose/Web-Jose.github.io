@@ -234,3 +234,11 @@ $(document).ready(function () {
     });
   });
 });
+
+function openNav() {
+  document.getElementById("hamburger-menu").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("hamburger-menu").style.width = "0";
+}

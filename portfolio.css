@@ -86,6 +86,68 @@ body {
   padding-top: 15em;
   margin: 0;
 }
+
+/* The side navigation menu */
+.hamburger-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #080d0c;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/* The menu content */
+.hamburger-menu a {
+  padding: 0.5em;
+  text-decoration: none;
+  font: bold 1.5em "Lato";
+  color: #d2d9d8;
+  display: block;
+  transition: 0.3s;
+}
+
+.hamburger-menu a.Title {
+  font: bold 2em "Lora";
+}
+
+.hamburger-menu a:hover {
+  color: #a5d0e1;
+}
+
+/* The close button */
+.hamburger-menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.hamburger-menu,
+.hamburger-menu-btn,
+.MenuButton {
+  display: none;
+}
+
+.MenuButton {
+  font-size: 30px;
+  cursor: pointer;
+  color: #d2d9d8;
+  margin-right: 0.5em;
+}
+
+@media screen and (max-width: 425px) {
+  .hamburger-menu,
+  .hamburger-menu-btn,
+  .MenuButton {
+    display: block;
+  }
+}
+
 /* Home Section */
 #Home {
   padding-top: 15em;
