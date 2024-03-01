@@ -177,35 +177,25 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.ProfileIMG {
-  background-image: url(Index-Uploads/Images/Me2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  padding-top: 100%;
+.ProfileIMG,
+.ProjectsIMG,
+.SkillIMG {
   margin-top: -10em;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.ProfileIMG {
+  width: 17.3em;
+  height: 17.3em;
 }
 .ProjectsIMG {
-  background-image: url(Index-Uploads/Images/Menu-Signage.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 70%;
-  padding-top: 70%;
-  margin-top: -10em;
-  border-radius: 50%;
+  width: 12.1em;
+  height: 12.1em;
 }
 .SkillIMG {
-  background-image: url(Index-Uploads/Images/Coding.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 70%;
-  padding-top: 70%;
-  margin-top: -10em;
-  border-radius: 50%;
+  width: 12.1em;
+  height: 12.1em;
 }
 .sub-text {
   color: #d2d9d8;
@@ -671,6 +661,19 @@ footer textarea {
   #sqrSki {
     order: 3;
   }
+
+  .ProfileIMG {
+    width: 21.25em;
+    height: 21.25em;
+  }
+  .ProjectsIMG {
+    width: 14.875em;
+    height: 14.875em;
+  }
+  .SkillIMG {
+    width: 14.875em;
+    height: 14.875em;
+  }
   .Courses::before {
     display: none;
   }
@@ -745,16 +748,22 @@ footer textarea {
   .square {
     width: 41%;
   }
+  .ProfileIMG {
+    width: 19.7em;
+    height: 19.7em;
+  }
   .ProjectsIMG {
+    width: 13.8em;
+    height: 13.8em;
     margin-top: -9em;
+  }
+  .SkillIMG {
+    width: 13em;
+    height: 13em;
+    margin-top: -8em;
   }
   #Home {
     margin-top: -17em;
-  }
-  .SkillIMG {
-    margin-top: -8em;
-    width: 30%;
-    padding-top: 30%;
   }
   #sqrSki {
     margin-top: 8em;
