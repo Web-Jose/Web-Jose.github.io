@@ -7,58 +7,52 @@ main {
 }
 
 .Title {
-  font: 2em "Lora";
-  font-weight: 600;
   color: #d2d9d8;
-  line-height: 0.25;
+  font: 2em/0.25 Lora;
+  font-weight: 600;
   transition: color 0.3s ease-in-out;
 }
-/* Header */
+
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 3em;
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: #204359;
-  padding: 0.25em;
   border-bottom: 0.2em solid #d2d9d8;
+  display: flex;
+  height: 3em;
+  justify-content: space-between;
+  left: 0;
+  padding: 0.25em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
+
 header .Title {
-  text-decoration: none;
   margin-right: auto;
   padding-left: 0.5em;
+  text-decoration: none;
 }
-header .Title:hover {
-  color: #a5d0e1;
-}
-/* Tabs */
+
 header nav {
   display: flex;
   gap: 1em;
   padding-right: 1em;
 }
+
 nav a {
+  border-bottom: #d2d9d8 solid 0;
   color: #d2d9d8;
-  font-size: 1em;
-  text-decoration: none;
-  font-family: Lato;
   display: flex;
+  font: 1em Lato;
   gap: 0.5em;
-  border-bottom: #d2d9d8 solid 0em;
+  text-decoration: none;
   transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
 nav a i {
-  opacity: 0%;
+  opacity: 0;
   transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-nav a:hover,
-nav a:active {
-  color: #a5d0e1;
 }
 
 nav a:hover i,
@@ -69,6 +63,7 @@ nav a:active i {
 nav a.active {
   border-bottom: #d2d9d8 solid 0.1em;
 }
+
 nav a.active:hover,
 nav a.active:active {
   border-color: #a5d0e1;
@@ -78,55 +73,48 @@ nav a.active i {
   opacity: 100%;
 }
 
-/* Body */
 body {
+  align-items: center;
   background-color: #d2d9d8;
   display: flex;
-  align-items: center;
-  padding-top: 15em;
   margin: 0;
+  padding-top: 15em;
 }
 
-/* The side navigation menu */
 .hamburger-menu {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
   background-color: #080d0c;
+  height: 100%;
+  left: 0;
   overflow-x: hidden;
-  transition: 0.5s;
   padding-top: 60px;
+  position: fixed;
+  top: 0;
+  transition: 0.5s;
+  width: 0;
+  z-index: 1;
 }
 
-/* The menu content */
 .hamburger-menu a {
-  padding: 0.5em;
-  text-decoration: none;
-  font: bold 1.5em "Lato";
   color: #d2d9d8;
   display: block;
+  font: bold 1.5em Lato;
+  padding: 0.5em;
+  text-decoration: none;
   transition: 0.3s;
 }
 
 .hamburger-menu a.Title {
-  font: bold 2em "Lora";
+  font: bold 2em Lora;
 }
 
-.hamburger-menu a:hover {
-  color: #a5d0e1;
-}
-
-/* The close button */
 .hamburger-menu .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  position: absolute;
+  right: 25px;
+  top: 0;
 }
+
 .hamburger-menu,
 .hamburger-menu-btn,
 .MenuButton {
@@ -134,698 +122,740 @@ body {
 }
 
 .MenuButton {
-  font-size: 30px;
-  cursor: pointer;
   color: #d2d9d8;
+  cursor: pointer;
+  font-size: 30px;
   margin-right: 0.5em;
 }
 
-@media screen and (max-width: 425px) {
-  .hamburger-menu,
-  .hamburger-menu-btn,
-  .MenuButton {
-    display: block;
-  }
+header .Title:hover,
+nav a:hover,
+nav a:active,
+.hamburger-menu a:hover {
+  color: #a5d0e1;
 }
 
-/* Home Section */
 #Home {
-  padding-top: 15em;
   margin-top: -15em;
+  padding-top: 15em;
 }
+
 .HomeSection {
-  display: flex;
-  justify-content: space-evenly;
   align-items: stretch;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
+
 #sqrMe {
   order: 2;
 }
+
 #sqrPro {
   order: 1;
 }
+
 #sqrSki {
   order: 3;
 }
+
 .square {
-  width: 27%;
+  align-items: center;
   background-color: #204359;
   border-radius: 0.625em;
-  padding: 1.25em;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 1.25em;
+  width: 27%;
 }
+
 .ProfileIMG,
 .ProjectsIMG,
 .SkillIMG {
-  margin-top: -10em;
   border-radius: 50%;
+  margin-top: -10em;
   object-fit: cover;
   object-position: center;
 }
+
 .ProfileIMG {
-  width: 17.3em;
   height: 17.3em;
+  width: 17.3em;
 }
-.ProjectsIMG {
-  width: 12.1em;
-  height: 12.1em;
-}
-.SkillIMG {
-  width: 12.1em;
-  height: 12.1em;
-}
+
 .sub-text {
   color: #d2d9d8;
   font: 1em Lato;
   text-align: left;
 }
+
 .LMButton {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  padding-top: 0.5em;
   text-align: center;
   width: 100%;
-  padding-top: 0.5em;
 }
+
 .button {
   font-family: Lato;
 }
+
 a.button {
+  background-color: #a5d0e1;
+  border-radius: 1em;
+  color: #080d0c;
   font-size: 2em;
   padding: 0.25em;
-  background-color: #a5d0e1;
-  color: #080d0c;
-  border-radius: 1em;
   text-decoration: none;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
 .button:hover,
 .button:active {
   background-color: #080d0c;
   color: #a5d0e1;
   cursor: pointer;
 }
-/* Skills Section */
+
 .skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
+
 .row {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: inherit;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   row-gap: 1em;
+  width: inherit;
 }
 
 .SkillCon {
-  width: 30%;
-  height: max-content;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: contain;
-  transition: transform 0.3s ease-in-out;
   cursor: pointer;
+  height: max-content;
+  transition: transform 0.3s ease-in-out;
+  width: 30%;
 }
 
 .SkillCon:hover {
   transform: scale(1.15);
 }
 
-.SkillCon g {
-  transition: fill 0.2s ease-in-out;
-}
-
-.SkillCon:hover g {
-  fill: #a5d0e1;
-}
-
-.SkillCon .cls-1 {
-  transition: fill 0.2s ease-in-out;
-}
-
-.SkillCon:hover .cls-1 {
-  fill: #a5d0e1;
-}
-
 .scroll-to-button {
+  align-items: center;
   cursor: pointer;
-  width: 100%;
-  text-decoration: none;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 1em 0;
+  text-decoration: none;
+  width: 100%;
 }
+
 .scroll-to-button i {
-  font-size: 3em;
   color: #204359;
+  font-size: 3em;
 }
 
 header[id],
 section[id] {
-  padding-top: 3.4em;
   margin-top: -3.4em;
+  padding-top: 3.4em;
 }
 
 .AboutSection {
   display: flex;
   justify-content: space-evenly;
 }
+
 .PicABO {
-  width: 45%;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 45%;
 }
+
 .AboutPicture {
-  width: 100%;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
+
 .PicSQR {
   background-image: url(Index-Uploads/Images/Red-Jacket.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  width: 40%;
-  padding-top: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 50%;
+  padding-top: 40%;
+  width: 40%;
 }
+
 .AboutSection .Title {
   color: #d2d9d8;
-  text-align: center;
-  width: 100%;
   line-height: 0;
   margin: 0.25em 0;
+  text-align: center;
+  width: 100%;
 }
+
 .SumSquare {
+  align-items: center;
+  background-color: #204359;
+  border-radius: 0.625em;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25em;
   width: 94%;
-  background-color: #204359;
-  border-radius: 0.625em;
-  padding: 1.25em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
+
 .EduSQR {
-  width: 45%;
+  align-items: center;
   background-color: #204359;
   border-radius: 0.625em;
-  padding: 1.25em;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 1.25em;
+  width: 45%;
 }
+
 .Courses {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  width: 100%;
   flex-wrap: wrap;
+  justify-content: left;
+  width: 100%;
 }
+
 .Courses::before {
   content: "\e5cf";
-  font-family: "Material Symbols Rounded";
   display: inline-block;
+  font: 600 2em "Material Symbols Rounded";
   margin-right: 8px;
-  font-weight: 600;
-  font-size: 2em;
 }
 
 .Info {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-out;
   text-align: left;
+  transition: max-height 0.5s ease-out;
 }
 
-/* Expereince Section */
 .ExperienceSection {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
+
 .ExperienceContainer {
+  display: flex;
   width: 94%;
-  display: flex;
 }
+
 .Experience {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 100%;
-  padding: 1em;
-  border-radius: 0.625em;
   background-color: #204359;
-}
-.ExpTitle {
+  border-radius: 0.625em;
   display: flex;
-  justify-content: space-between;
-  font: 1.5em "Lato";
-  font-weight: bold;
-  color: #d2d9d8;
-  margin: 0.25em 0;
-  width: 100%;
-}
-.ExpInfo {
-  display: flex;
-  text-align: left;
   flex-direction: column;
-  font: 1em "Lato";
+  padding: 1em;
+  width: 100%;
+}
+
+.ExpTitle {
   color: #d2d9d8;
+  display: flex;
+  font: 1.5em Lato;
+  font-weight: bold;
+  justify-content: space-between;
   margin: 0.25em 0;
   width: 100%;
+}
+
+.ExpInfo {
+  color: #d2d9d8;
+  display: flex;
+  flex-direction: column;
+  font: 1em Lato;
   gap: 0.5em;
+  margin: 0.25em 0;
+  text-align: left;
+  width: 100%;
 }
 
 ul {
   margin: 0;
 }
+
 ul li {
   line-height: 1.25;
 }
 
-/* Projects Section */
 .ProjectsSection {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-bottom: 2em;
 }
+
 #AltTitle {
   color: #204359;
   margin-top: 0.25em;
 }
 
 #searchInput {
-  padding: 0.625em;
-  border-radius: 0.625em;
-  font-family: "Lato";
-  font-size: 1em;
-  width: 90%;
-  margin: 0 0 1em 0;
   border: none;
+  border-radius: 0.625em;
+  font: 1em "Lato";
+  margin: 0 0 1em;
+  padding: 0.625em;
+  width: 90%;
 }
 
 #NoProjects {
+  align-items: center;
+  color: #204359;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font: 700 2em "Lato";
   gap: 0.5em;
-  font-family: "Lato";
-  font-size: 2em;
-  font-weight: bold;
-  color: #204359;
 }
 
 .CardContainer {
   display: flex;
-  gap: 1%;
-  row-gap: 1em;
-  gap: 1em;
   flex-wrap: wrap;
+  gap: 1%;
+  gap: 1em;
   justify-content: center;
+  row-gap: 1em;
   width: 100%;
 }
+
 .card {
-  width: 45%;
   background-color: #204359;
-  position: relative;
-  overflow: hidden;
   border-radius: 1em;
   height: auto;
-}
-.front {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  font: 2em "Lora";
-  font-weight: 600;
-  color: #d2d9d8;
-  background-color: #20435962;
-  background-blend-mode: screen;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: #080d0c 1px 0 0.625em;
-}
-.expandable {
+  overflow: hidden;
   position: relative;
-  top: 100%;
-  transition: top 1s ease-in-out;
+  width: 45%;
+}
+
+.front {
+  align-items: center;
+  background-blend-mode: screen;
+  background-color: #20435962;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #d2d9d8;
+  display: flex;
+  font: 2em Lora;
+  font-weight: 600;
   height: 100%;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  text-shadow: #080d0c 1px 0 0.625em;
   width: 100%;
+}
+
+.expandable {
   background-color: #204359;
   color: #d2d9d8;
   font: 1em Lato;
+  height: 100%;
+  position: relative;
   text-align: left;
+  top: 100%;
+  transition: top 1s ease-in-out;
+  width: 100%;
 }
+
 .expandable p {
   padding: 0 1em;
 }
+
 .card:hover .expandable {
-  top: 0%;
   display: flex;
   flex-direction: column;
+  top: 0;
 }
+
 .buttons {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 0.5em;
 }
+
 .buttons a {
-  width: 25%;
-  text-decoration: none;
-  color: #080d0c;
   background-color: #a5d0e1;
   border-radius: 1em;
+  color: #080d0c;
   padding: 0.25em;
-  white-space: nowrap;
   text-align: center;
+  text-decoration: none;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  white-space: nowrap;
+  width: 25%;
 }
+
 .buttons a:hover {
-  color: #a5d0e1;
   background-color: #080d0c;
+  color: #a5d0e1;
 }
+
 footer {
+  align-items: center;
   background-color: #204359;
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
 }
+
 .contactform {
   width: 70%;
 }
+
 form {
   text-align: left;
 }
+
 label {
-  font: 1em "Lato";
   color: #d2d9d8;
+  font: 1em Lato;
 }
+
 #contact {
-  padding-top: 17em;
   margin-top: -17em;
+  padding-top: 17em;
 }
+
 footer input {
-  padding: 0.625em;
+  border: none;
   border-radius: 0.625em;
   font-family: "Lato";
-  width: 97%;
   margin: 0.625em 0;
-  border: none;
-}
-footer textarea {
   padding: 0.625em;
+  width: 97%;
+}
+
+footer textarea {
   border-radius: 0.625em;
   font-family: "Lato";
-  width: 97%;
-  margin: 0.625em 0 0 0;
-  resize: vertical;
-}
-#submit {
-  appearance: none;
-  -webkit-appearance: none;
+  margin: 0.625em 0 0;
   padding: 0.625em;
-  border: none;
-  font: 1em "Lato";
-  background-color: #a5d0e1;
-  color: #080d0c;
-  font-weight: 600;
-  border-radius: 5px;
-  width: 100%;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  resize: vertical;
+  width: 97%;
 }
+
+#submit {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #a5d0e1;
+  border: none;
+  border-radius: 5px;
+  color: #080d0c;
+  cursor: pointer;
+  font: 1em Lato;
+  font-weight: 600;
+  padding: 0.625em;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  width: 100%;
+}
+
 #submit:active,
 #submit:hover {
   background-color: #080d0c;
   color: #a5d0e1;
 }
+
 .email {
-  font: 1em "Lato";
+  align-items: center;
   color: #d2d9d8;
+  display: flex;
+  font: 1em Lato;
+  gap: 0.5em;
   margin-top: 0.5em;
   text-decoration: none;
-  display: flex;
-  gap: 0.5em;
-  align-items: center;
 }
+
 .email svg {
   width: 1.5em;
 }
+
 .socials {
-  font: 1em "Lato";
   color: #d2d9d8;
+  font: 1em Lato;
   margin: 1em 0;
 }
+
 .social-icons a {
   color: #d2d9d8;
   text-decoration: none;
 }
-.social-icons a:hover svg .st0 {
-  fill: #a5d0e1;
-}
+
 .icon {
   width: 2.5em;
 }
 
-/* 404 Page */
 .Error404 {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 1em;
-  padding: 5em 1em 2em 1em;
-  margin-top: -15em;
   height: 50vh;
+  justify-content: center;
+  margin-top: -15em;
+  padding: 5em 1em 2em;
 }
-.ErrorTitle {
-  font: 10em "Lora";
-  font-weight: 600;
-  color: #d2d9d8;
-  line-height: 1;
 
+.ErrorTitle {
   background-color: #204359;
-  padding: 0.25em;
   border-radius: 1em;
+  color: #d2d9d8;
+  font: 10em/1 Lora;
+  font-weight: 600;
+  padding: 0.25em;
   text-align: center;
 }
+
 .ErrorText {
-  font: 1.5em "Lato";
   color: #204359;
+  font: 1.5em Lato;
   text-align: center;
 }
+
 .ErrorText a {
   color: #204359;
-  text-decoration: none;
   font-weight: 600;
+  text-decoration: none;
 }
 
-/* Extra Small Devices (Mobile Phones) */
+.ProjectsIMG,
+.SkillIMG {
+  height: 12.1em;
+  width: 12.1em;
+}
+
+.SkillCon g,
+.SkillCon .cls-1 {
+  transition: fill 0.2s ease-in-out;
+}
+
+.SkillCon:hover g,
+.SkillCon:hover .cls-1,
+.social-icons a:hover svg .st0 {
+  fill: #a5d0e1;
+}
+
 @media only screen and (max-width: 425px) {
-  header nav {
-    display: none;
+  .hamburger-menu,
+  .hamburger-menu-btn,
+  .MenuButton {
+    display: block;
   }
   .HomeSection {
     flex-direction: column;
-    row-gap: 10em;
     flex-wrap: nowrap;
+    row-gap: 10em;
     width: 100%;
   }
+
   .square {
-    width: 80%;
     align-self: center;
+    width: 80%;
   }
+
   #sqrMe {
     order: 1;
   }
+
   #sqrPro {
     order: 2;
   }
+
   #sqrSki {
     order: 3;
   }
 
   .ProfileIMG {
-    width: 21.25em;
     height: 21.25em;
+    width: 21.25em;
   }
-  .ProjectsIMG {
-    width: 14.875em;
-    height: 14.875em;
-  }
-  .SkillIMG {
-    width: 14.875em;
-    height: 14.875em;
-  }
-  .Courses::before {
-    display: none;
-  }
+
   .Courses p::before {
     content: "\e5cf";
-    font-family: "Material Symbols Rounded";
     display: inline-block;
+    font: 600 2em "Material Symbols Rounded";
     margin-right: 8px;
-    font-weight: 600;
-    font-size: 2em;
   }
+
   .Courses {
     text-align: left;
   }
+
   .Courses p {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
   }
+
   .scroll-to-button i {
     width: 10%;
   }
+
   .AboutSection {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     gap: 1em;
   }
+
   .PicABO {
     width: 100%;
   }
-  .SumSquare {
-    width: 80%;
-  }
+
   .PicSQR {
-    width: 50%;
     padding-top: 50%;
+    width: 50%;
   }
-  .EduSQR {
-    width: 80%;
-  }
+
   .ExpTitle {
     flex-direction: column;
     gap: 0.25rem;
     margin: 0;
   }
+
   .JobDate {
-    font: bold 0.75em "Lato";
+    font: bold 0.75em Lato;
     text-align: right;
   }
+
   .card {
     width: 90%;
   }
+
   .buttons a {
     width: 30%;
   }
-  .contactform {
-    width: 80%;
-  }
 
-  /* 404 Page */
   .Error404 {
     height: 60vh;
   }
 
   .ErrorTitle {
-    font: 8em "Lora";
+    font: 8em Lora;
+  }
+
+  header nav,
+  .Courses::before {
+    display: none;
+  }
+
+  .ProjectsIMG,
+  .SkillIMG {
+    height: 14.875em;
+    width: 14.875em;
+  }
+
+  .SumSquare,
+  .EduSQR,
+  .contactform {
+    width: 80%;
   }
 }
 
-/* Small Devices (Tablets) */
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   .square {
     width: 41%;
   }
+
   .ProfileIMG {
-    width: 19.7em;
     height: 19.7em;
+    width: 19.7em;
   }
+
   .ProjectsIMG {
-    width: 13.8em;
     height: 13.8em;
     margin-top: -9em;
+    width: 13.8em;
   }
+
   .SkillIMG {
-    width: 13em;
     height: 13em;
     margin-top: -8em;
+    width: 13em;
   }
+
   #Home {
     margin-top: -17em;
   }
+
   #sqrSki {
     margin-top: 8em;
     width: 90%;
   }
+
   .SkillCon {
-    width: 20%;
     height: 40%;
+    width: 20%;
   }
+
   .scroll-to-button i {
     width: 7%;
   }
+
   .AboutSection {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     gap: 1em;
   }
-  .SumSquare {
-    width: 90%;
-  }
-  .PicABO {
-    width: 100%;
-  }
+
   .PicSQR {
-    width: 30%;
     padding-top: 30%;
+    width: 30%;
   }
-  .EduSQR {
-    width: 90%;
-  }
+
   .Info {
     text-align: justify;
   }
-  .ExperienceSection {
-    width: 100%;
-  }
+
   .ExperienceContainer {
-    width: 100%;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
   }
+
   .ExpTitle {
     flex-direction: column;
     gap: 0.5rem;
   }
-  .Experience {
-    width: 90%;
-  }
-  .card {
-    width: 90%;
-  }
+
   .buttons a {
     width: 20%;
   }
+
+  .SumSquare,
+  .EduSQR,
+  .Experience,
+  .card {
+    width: 90%;
+  }
+
+  .PicABO,
+  .ExperienceSection {
+    width: 100%;
+  }
 }
 
-/* Medium Devices (Laptops and Desktops) */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-}
-
-/* Large Devices (Large Laptops and Desktops) */
 @media only screen and (min-width: 1025px) {
   .buttons a {
     width: 20%;
