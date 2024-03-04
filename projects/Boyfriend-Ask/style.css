@@ -1,0 +1,100 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffa7c4;
+}
+.Ask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  width: 100%;
+}
+.GIF-Container {
+  width: 25%;
+}
+.GIF-Container img {
+  width: 100%;
+  height: auto;
+}
+.Question {
+  font: 4em "edding-780", sans-serif;
+  color: #402b3a;
+}
+.Button-Container {
+  display: flex;
+  gap: 1em;
+  margin: 0.5em 0;
+}
+.Button {
+  font: 800 3em "lato", sans-serif;
+  color: #402b3a;
+  padding: 0.25em 0.75em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #f8f4ec;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.Button:hover {
+  background-color: #402b3a;
+  color: #ffa7c4;
+}
+
+.Thank-You {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  width: 90%;
+}
+.GIF-Container-Yes {
+  width: 45%;
+}
+.GIF-Container-Yes img {
+  width: 100%;
+  height: auto;
+}
+.Message {
+  font: 3em "edding-780", sans-serif;
+  color: #402b3a;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  .GIF-Container {
+    width: 35%;
+  }
+  .Question {
+    font-size: 3.5em;
+  }
+  .Button {
+    font-size: 2.5em;
+  }
+  .GIF-Container-Yes {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .GIF-Container {
+    width: 50%;
+  }
+  .Question {
+    font-size: 2.25em;
+  }
+  .Button {
+    font-size: 2em;
+  }
+  .GIF-Container-Yes {
+    width: 80%;
+  }
+}
